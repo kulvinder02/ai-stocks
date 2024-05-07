@@ -276,8 +276,6 @@
       </h2>
       <p class="fw-normal text-sm color-white lh_150 mb-5 text-center mt-3 ff_orbitron max_w_812"> Trading with leveraged accounts in CFDs provides traders with increased buying power, enabling them to attain superior results across various markets. By amplifying potential returns and accessing additional capital, traders can capitalize on market opportunities more effectively, enhancing their overall trading performance.</p>
     </div>
-
-
     <div class="row px-xxl-3">
       <div class="col-lg-6 px-xxl-0 d-flex flex-column justify-content-center align-items-center">
         <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start  p-4 green_card">
@@ -330,10 +328,70 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <button class="graph_btn text-sm fw-bold color-white ff_orbitron border-none">Maximize Your Profit</button>
     </div>
+    <p class="text-sm color-white fw-normal lh_150 mb-5 ff_orbitron text-center">With Leveraged Accounts and Enhanced Buying Power Today!</p>
+     </div>
   </section>
 
 
+  <!-- ----------how it work ------------ -->
+  <section>
+    <div class="how_it_work_bg">
+    <div class="custom_container container">
+      <div class=" pt-5 d-flex flex-column align-items-center justify-content-center">
+        <h2
+          class="ff_orbitron color-white text-center fw-bold lh_140 text-2xl">
+        How it
+          <span class="color-green fw-bold" >Works</span >
+        </h2>
+        <p class="fw-normal text-sm color-white lh_160 text-center mt-3 ff_opensans max_w_726"> If you've used ChatGPT, the OpenAl chatbot that has wowed users by writing code and instantly answering complex questions, you've gotten a glimpse into the next frontier in artificial intelligence, as big tech companies are racing to develop the leading Al chatbot.
+        </p>
+        <p class="fw-normal text-sm color-white lh_160 text-center mt-3 ff_opensans max_w_726"> If you want to get portfolio exposure to Al companies but don't want to identify individual Al stocks, you can invest in an Al-focused exchange-traded fund (ETF). AI ETFs provide exposure to a broad range of the best Al companies, eliminating the need to research and choose individual stocks on your own.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h4 class="">Sign up</h4>
+        </div>
+      </div>
+      </div>
+    </div> 
+  </section>
+
+<!-- -------statistics for today---------- -->
+   <section>
+    <div class="bg_green pt-4 pb-2">
+      <div class="custom_container container pb-4">
+      <h2
+      class="ff_orbitron color-light-black  text-center fw-normal mt-3 pb-4 pt-5 lh_140 text-2xl">
+      Statistics 
+      <span class="fw-bold" >For Today</span >
+    </h2>
+    <div class="row mt-3 pb-5 justify-content-center">
+      <div class="col-sm-6 d-flex justify-content-center col-lg-4">
+        <div class="counter_box">
+              <div class="counter_digit_box d-flex flex-column justify-content-center align-items-center  mx-auto"> <h4 class="fw-bold ff_orbitron text-4xl">0<span class="counter" data-target="1">1 </span></h4> </div>
+                     <p class="text-xl color-light-black  text-center fw-semibold lh_130 ff_opensans mt-3 pt-1">Places left to register</p>
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex justify-content-center  mt-3 mt-sm-0 col-lg-4">
+        <div class="counter_box">
+              <div class="counter_digit_box d-flex flex-column justify-content-center align-items-center  mx-auto"> <h4 class="fw-bold ff_orbitron text-4xl"><span class="counter" data-target="135"> 135</span></h4> </div>
+                     <p class="text-xl color-light-black  text-center fw-semibold lh_130 ff_opensans mt-3 pt-1">Average Registrations per day</p>
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex justify-content-center mt-3 mt-sm-4 mt-md-5 mt-lg-0 col-lg-4">
+        <div class="counter_box">
+              <div class="counter_digit_box d-flex flex-column justify-content-center align-items-center  mx-auto"> <h4 class="fw-bold ff_orbitron text-4xl"><span class="counter" data-target="5"> 5</span>X</h4> </div>
+                     <p class="text-xl color-light-black  text-center fw-semibold lh_130 ff_opensans mt-3 pt-1">The Average Earnings Increase</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+   </section>
 
 
     <!-- bootstrap link -->
@@ -390,5 +448,25 @@
         });
       });
     </script>
+
+     <!-- counter -->
+     <script>
+      const counters = document.querySelectorAll(".counter");
+
+      counters.forEach((counter) => {
+        counter.innerText = "0";
+        const updateCounter = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / 200;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCounter, 1);
+          } else counter.innerText = target;
+        };
+        updateCounter();
+      });
+    </script>
+
   </body>
 </html>
