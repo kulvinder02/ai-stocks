@@ -1,0 +1,135 @@
+* {
+    list-style: none;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    text-decoration: none !important;
+}
+
+.custom_container {
+    max-width: 1164px !important;
+}
+
+/* navbar */
+.logo_name {
+    cursor: pointer;
+    width: 192px;
+    height: 22.65px;
+}
+
+.navbar_1 {
+    border-bottom: 1px solid #808080;
+    height: 100px;
+}
+
+.nav_btn {
+    transition: all 300ms ease-in-out;
+    padding: 11.2px 21.5px !important;
+    border: 1px solid white;
+}
+.nav_btn:hover {
+    background-color: #98BD42 !important;
+    color: black;
+}
+
+.menu_btn {
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid white !important;
+    padding:18px 15px  !important;
+    width: 52px;
+    height: 52px;
+    background-color: inherit;
+}
+
+.menu_btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 300ms linear;
+}
+/* --------------hero-section-------------- */
+.hero_bg{
+    background-image: url("../images/png/hero-bg.png");
+    background-position:center;
+    background-size: cover;
+
+}
+/* ------slider srction--------- */
+.slider_card{
+    height: 125.4px;
+    max-width: 309.81px;
+    padding: 14px !important;
+    background: #151515;
+}
+.slider_profile_img{
+    width: 88.52px;
+    height: 96px;
+}
+.p_69{
+   padding: 69.5px !important;
+}
+.blur_circle{
+    filter: blur(320px);
+    border-radius: 400px;
+    width: 458px;
+    height: 458px;
+    background-color: #98BD42;
+}
+.slider_blur_ellips{
+    top: -50% !important;
+    right:-20%;
+}
+.max_w_978{
+    max-width: 978px;
+}
+/*---------- benifits---------- */
+.green_circle{
+    background: #98BD42;
+    height: 236.58px;
+    width: 236.58px;
+    border-radius:150px ;
+}
+.py_78{
+    padding-bottom: 78px !important;
+    padding-top: 78px !important;
+}
+.max_w_178{
+    max-width: 179px;
+}
+.left_border_box{
+    max-width: 833px;
+    background: #1D1f17;
+    border-left: 8px solid #98BD42;
+    padding: 26px  31px !important;
+   
+}
+.pb_72{
+    padding-bottom: 72px !important;
+}
+@media (max-width:992px) {
+    .green_circle{
+        height: 146.58px;
+        width: 186.58px;
+    }
+    .black_logo{
+        width: 150px;
+    }
+}
+@media (max-width:576px) {
+    .p_69{
+        padding: 19.5px !important;
+     }
+    .logo_name {
+        width: 102px;
+        height: 22.65px;
+    }
+    .nav_btn {
+        padding: 5.2px 11.5px !important;
+    }
+    .menu_btn {
+        margin-left: 5px;
+        padding:10px 10px  !important;
+        width: 36px;
+        height: 36px;
+    }
+}
