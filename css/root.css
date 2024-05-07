@@ -17,12 +17,16 @@
     --font-sm: 16px;
     --font-md: 18.44px;
     --font-lg: 20px;
+    --font-xl: 24px;
+    --font-xxl: 32px;
     --font-2xl: 48px;
     --font-3xl: 52px;
   
      --color-grey: #151515;
+     --color-light-grey: #4E5051;
     --color-white: #ffffff;
     --color-green: #98BD42;
+    --color-dark-green: #2DB965;
 }
 
 /* line height */
@@ -35,15 +39,24 @@
 .lh_150{
     line-height: 150% !important;
 }
-
-.color-white {
-   color: var( --color-white);
+.lh_160{
+    line-height: 160% !important;
 }
+
+.color-light-grey {
+   color: var( --color-light-grey);
+}
+.color-white {
+    color: var( --color-white);
+ }
 .color-green {
     color: var( --color-green);
  }
+ .color-dark-green {
+    color: var( --color-dark-green);
+ }
  .bg-grey {
-    background-color: var( --color-grey);
+    background-color: var( --color-dark-grey);
  }
 
 
@@ -53,6 +66,12 @@
 }
 .text-sm {
     font-size: var( --font-sm);
+}
+.text-xl{
+    font-size: var(--font-xl);
+}
+.text-xxl{
+    font-size: var(--font-xxl);
 }
 .text-3xl{
     font-size: var(--font-3xl);
@@ -88,6 +107,7 @@
 }
 @media (max-width:576px) {
     :root {
+        --font-xl: 20px;
         --font-2xl: 28px;
         --font-sm: 16px;
         --font-3xl: 18px !important; 

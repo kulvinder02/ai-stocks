@@ -106,6 +106,41 @@
 .pb_72{
     padding-bottom: 72px !important;
 }
+
+/* ---understaing--- */
+.max_w_678{
+    max-width: 778px;
+}
+.max_w_812{
+    max-width: 812px;
+}
+.green_card{
+    max-width: 524px;
+    border-radius: 16px;
+    min-height: 260px;
+    background: #98BD42;
+}
+.john_invested{
+    width: 72px;
+    height: 72px;
+}
+.graph_card{
+    margin-top: -80px;
+    max-width: 471px;
+    border-radius: 15px;
+    background: white;
+    padding: 20px !important;
+}
+.gradient_color{
+    color: #D221EB;
+
+}
+@media (max-width:1200px) {
+    .graph_card{
+        max-width: 420px;
+    }
+}
+
 @media (max-width:992px) {
     .green_circle{
         height: 146.58px;
@@ -115,7 +150,44 @@
         width: 150px;
     }
 }
+@media (max-width:768px) {
+ .sm_ai_stcok_text{
+    font-size: 14px;
+ }
+ .ai_stock_svg{
+    width: 40px;
+    height: 40px;
+ }
+}
 @media (max-width:576px) {
+    .graph_card{
+        max-width: 330px !important;
+    }
+    .graph_card{
+        margin-top: -26px;
+       
+    }
+    .graph_card{
+        max-width: 420px;
+    }
+    .py_78{
+        padding-bottom: 28px !important;
+        padding-top: 28px !important;
+    }
+    .green_circle{
+        margin-top: -40px;
+        height: 120.58px;
+        width: 186.58px;
+    }
+    .black_logo{
+        width: 120px;
+    }
+    .max_w_178{
+        max-width: 329px;
+    }
+    .sm_ai_stcok_text{
+        font-size: 12px;
+     }
     .p_69{
         padding: 19.5px !important;
      }
