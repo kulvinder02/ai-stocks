@@ -52,13 +52,30 @@
     background-image: url("../images/png/hero-bg.png");
     background-position:center;
     background-size: cover;
-
+}
+.mobile_frame{
+    background-image: url("../images/png/mobile-frame.png");
+    background-position:center;
+    background-size: cover;
+    max-width: 328.76px;
+    height: 644px;
+    padding:63px 28px;
+}
+.mobile_btn{
+    transition: all 300ms ease-in-out;
+    border: none !important;
+    padding:13.3px 28.3px  !important;
+    border-radius: 87px;
+    background: #98BD42;
+}
+.mobile_btn:hover{
+    background: #000;
+    color: white;
 }
 /* ------slider srction--------- */
 .slider_card{
     height: 125.4px;
-    width: 309.81px;
-    padding: 14px !important;
+    width: 309.81px !important;
     background: #151515;
 }
 .gap_17{
@@ -86,7 +103,7 @@
     max-width: 978px;
 }
 .profile_slider {
-    width: calc(136 * 14);
+    width: calc(126 * 6);
     -webkit-animation: scroll 15s linear infinite;
     animation: scroll 15s linear infinite;
   }
@@ -96,10 +113,10 @@
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(calc(-136px * 7));
-      transform: translateX(calc(-136px * 7));
+      -webkit-transform: translateX(calc(-126px * 3));
+      transform: translateX(calc(-126px * 3));
     }
-  }
+  } 
 
 
 /*---------- benifits---------- */
@@ -249,7 +266,50 @@
     padding-left: 36px !important;
     padding-right: 36px !important;
 }
+.mt_18{
+    margin-top: 18px;
+}
+.input_border{
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+    padding: 8px !important;
+    height: 37px;
+}
+.input_border:hover{
+    border: 1px solid #98BD42;
+}
+.form_btn{
+    transition: all 200ms ease-in-out;
+    border: 1px solid transparent;
+    background: #98BD42;
+    border-radius: 87px;
+    max-width: 269px;
+    padding: 12.4px  95px  !important;
+}
+.form_btn:hover{
+    background: #000;
+    color: white;
+}
+.vdio_box{
+    position: relative;
+    z-index: 10;
+    background: #000;
+    max-width: 762px;
+    border: 1px solid #3f4f1d;
+    padding: 20px !important;
+}
+.hero_vdios{
+    max-width: 721px;
+    height: 324px;
+}
+.countdown_box{
+    width: 601px;
+}
 @media (max-width:1200px) {
+    .mobile_frame {
+        height: 605px;
+        padding: 54px 21px;
+    }
     .graph_card{
         max-width: 420px;
     }
@@ -257,11 +317,21 @@
         max-width: 360px;
         padding: 23px;
     }
+    .px_36 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .how_it_work_bg {
+        height: 785px;
+    }
   
     
 }
 
 @media (max-width:991.9px) {
+     .mobile_frame {
+        height: 644px;
+     }
     .px_36{
         padding-left: 14px !important;
         padding-right: 14px !important;
@@ -290,11 +360,24 @@
     }
 }
 @media (max-width:768px) {
+    .countdown_box{
+        max-width: 100% !important;
+    }
+    .black_logo {
+        width: 113px;
+    }
+    .green_circle {
+        height: 115.58px;
+        width: 186.58px;
+    }
     .counter_box {
        padding: 20px !important;
     }
     .graph_btn{
         margin-top: 23px;
+    }
+    .how_it_work_bg {
+        height: 845px;
     }
 
  .sm_ai_stcok_text{
@@ -306,6 +389,21 @@
  }
 }
 @media (max-width:575.9px) {
+    .vdio_box{
+        margin-top: -40px;
+    }
+    .hero_vdios {
+        height: 133px;
+    }
+    .pb_72{
+        padding-bottom: 40px !important;
+    }
+    .green_card {
+        min-height: 300px;
+    }
+    .navbar_1 {
+        height: 70px;
+    }
     .how_it_work_bg{
         height: 1050px !important;
     }
@@ -315,7 +413,7 @@
     }
     .register_btn{
        margin-bottom: 20px !important;
-        margin-top: 15px !important;
+        margin-top: 5px !important;
     }
     
     .counter_digit_box {
@@ -384,6 +482,7 @@
     }
 }
 @media (max-width:380px) {
+ 
     .how_it_work_bg{
         height: 1090px !important;
     }
@@ -400,7 +499,21 @@
     }
 }
 @media (max-width:350px) {
+    .vdio_box {
+        padding: 7px !important;
+    }
+    .countdown_text{
+        font-size: 16px !important;
+    }
+    .mobile_frame {
+        max-width: 320.76px;
+        height: 585px;
+        padding: 63px 17px;
+    }
     .how_it_work_bg{
         height: 1170px !important;
+    }
+    .green_card {
+        min-height: 340px;
     }
 }

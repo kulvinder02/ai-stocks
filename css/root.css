@@ -10,14 +10,16 @@
     font-family: "Inter", sans-serif;
 }
 
-.ff_poppins{
+.ff_poppins {
     font-family: "Poppins", sans-serif;
 }
+
 .ff_orbitron {
     font-family: "Orbitron", sans-serif;
 }
 
 :root {
+    --font-xxsm: 12px;
     --font-xsm: 14.74px;
     --font-sm: 16px;
     --font-md: 18.44px;
@@ -27,9 +29,12 @@
     --font-2xl: 48px;
     --font-3xl: 52px;
     --font-4xl: 68px;
+    --color-extralight-black: #4d4d4d;
     --color-light-black: #18161A;
     --color-grey: #151515;
+    --color-dark-grey: #020507;
     --color-light-grey: #4E5051;
+    --color-light-white: #cdcdcd;
     --color-white: #ffffff;
     --color-dark-white: #cfd0cd;
     --color-green: #98BD42;
@@ -40,6 +45,7 @@
 .lh_120 {
     line-height: 120% !important;
 }
+
 .lh_125 {
     line-height: 125% !important;
 }
@@ -61,11 +67,24 @@
     color: var(--color-light-grey);
 }
 
+.color-dark-grey {
+    color: var(--color-dark-grey);
+}
+
 .color-light-black {
     color: var(--color-light-black);
 }
+
+.color-extralight-black {
+    color: var(--color-extralight-black);
+}
+
 .color-white {
     color: var(--color-white);
+}
+
+.color-light-white {
+    color: var(--color-light-white);
 }
 
 .color-green {
@@ -87,6 +106,10 @@
 
 
 /* text size */
+.text-xxsm {
+    font-size: var(--font-xxsm);
+}
+
 .text-xsm {
     font-size: var(--font-xsm);
 }
@@ -106,6 +129,7 @@
 .text-3xl {
     font-size: var(--font-3xl);
 }
+
 .text-4xl {
     font-size: var(--font-4xl);
 }
@@ -123,7 +147,7 @@
 }
 
 
-.fw_500{
+.fw_500 {
     font-weight: 500 !important;
 }
 
@@ -133,27 +157,32 @@
         --font-sm: 16px;
         --font-xl: 22px;
         --font-2xl: 40px;
-        --font-3xl: 32px !important;
+        --font-3xl: 42px !important;
     }
 }
 
 
 @media (max-width:768px) {
     :root {
+        --font-4xl: 48px;
         --font-lg: 16px !important;
         --font-2xl: 38px;
         --font-xl: 20px;
         --font-sm: 16px;
-        --font-3xl: 22px !important;
+        --font-3xl: 34px !important;
     }
 }
 
 @media (max-width:576px) {
-  
+
     :root {
+        --font-md: 16px;
         --font-xl: 20px;
-        --font-2xl: 20px;
+        --font-xxl: 24px;
+        --font-2xl: 28px;
         --font-sm: 16px;
-        --font-3xl: 25px !important;
+        --font-3xl: 32px !important;
+        --font-4xl: 38px;
+
     }
 }

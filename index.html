@@ -25,7 +25,7 @@
   <body class="bg-black">
     <!-- ------- Header------- -->
     <div class="overflow-hidden">
-    <section class="min-vh-100 hero_bg">
+    <section>
       <!-- nav bar -->
       <nav class="navbar_1 d-flex align-items-center">
         <div class="custom_container container">
@@ -55,8 +55,9 @@
         </div>
       </nav>
       <!-- hero sectionc -->
+      <div class="min-vh-100 hero_bg">
       <div class="custom_container container">
-        <div class="d-flex justify-content-center  align-items-center">
+        <div class="d-flex justify-content-center flex-column  align-items-center">
           <h2
             class="ff_orbitron d-none d-sm-block color-white text-center fw-normal lh_120 mt-5 pt-4 text-3xl"
           >
@@ -82,8 +83,75 @@
           7 Fastest-Growing
           <span class="color-green fw-bolder"> AI Stocks!</span>
         </h2>
+        <p class="text-sm fw-normal lh_160 ff_opensans  mt-3 color-light-white max_w_678 text-center px-4 mt-sm-4">Major AI Stocks such as Microsoft and Nvidia have surged over 80% in the past year. This giants are expected to grow 130.66% in 2024</p>
+        </div>
+
+        <div class="row mt-2 mt-sm-3 mt-lg-5">
+          <div class="col-12 col-lg-4 mt-4 d-flex justify-content-lg-end justify-content-center  order-1 order-lg-0">
+            <div class="mobile_frame">
+              <h4 class="fw-bold ff_opensans lh_140 text-sm color-dark-grey">This Is The Right Time to Invest In AI Stocks</h4>
+              <p class="text-xxsm fw-normal lh_160 ff_opensans mt-2 mb-4 pe-2 color-light-grey">In a matter of minutes one of our AI mentors will contact you, No Experience Required!</p>
+         
+              <form action="submit" class="mt_18">
+                <div class="d-flex flex-column">
+                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">First Name </label>
+                <input type="text" id="name" name="user_name" class="mt-1 input_border">
+                </div>
+                <div class="d-flex flex-column mt-2">
+                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Last Name </label>
+                <input type="text" id="name" name="user_name" class="mt-1 input_border">
+                </div>
+                <div class="d-flex flex-column mt-2">
+                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Email </label>
+                <input type="email" id="name" name="user_name" class="mt-1 input_border">
+                </div>
+                <div class="d-flex flex-column mt-2">
+                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Phone Number </label>
+                <input type="number" id="name" name="user_name" class="mt-1 input_border">
+                <button class="mt-sm-4 mt-2 fw-bold lh_150 text-xxsm ff_opensans form_btn">Get Started</button>
+                </div>
+              
+               </form>
+             <div class="d-flex justify-content-center align-items-center">
+              <button class="color-black text-xxsm  lh_140 fw-bold ff_opensans mobile_btn mt-2 mt-sm-3">3 Spots Left</button>
+           
+             </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8  mt-5 order-0">
+             <div class="vdio_box d-flex flex-column mt-lg-5 justify-content-center mx-auto">
+                <img src="./images/png/vdio-img.png" class="hero_vdios w-100" alt="session">
+                <p class="text-center fw-light mt-3 mb-2 color-white ff_opensans lh_140 text-md">Due to extremely high demand for media coverage, registration closes in</p>
+                 
+                 <div class="mt-2 countdown_box mx-auto d-flex align-items-center justify-content-center justify-content-md-between"> 
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text">00</h4>
+                    <p class="color-white ff_opensans text-md lh_140 fw-light">Days</p>
+                  </div>
+                  <img src="./images/svg/counter-dots.svg" alt="dots">
+
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text">01</h4>
+                    <p class="color-white ff_opensans text-md lh_140 fw-light">Hours</p>
+                  </div>
+                  <img src="./images/svg/counter-dots.svg" alt="dots">
+
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text">02</h4>
+                    <p class="color-white ff_opensans text-md lh_140 fw-light">Minutes</p>
+                  </div>
+                  <img src="./images/svg/counter-dots.svg" alt="dots">
+
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text"  >32</h4>
+                    <p class="color-white ff_opensans text-md lh_140 fw-light">Seconds</p>
+                  </div>
+                 </div>
+             </div>
+          </div>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- slider section -->
@@ -91,8 +159,9 @@
     <div class="p_69  position-relative ">
       <div class="blur_circle position-absolute slider_blur_ellips d-none d-lg-block"></div>
 
-    <div class="profile_slider d-flex align-items-center gap_17">
-     
+      <div class="overflow-hidden py-sm-3 py-2">
+        <div class="d-flex align-items-center profile_slider logo_gap  gap-4">
+            
         <div class="slider_card d-flex align-items-center">
           <img
             src="./images/png/murray.png"
@@ -111,7 +180,6 @@
             </p>
           </div>
         </div>
-        
         <div class="slider_card d-flex align-items-center">
           <img
             src="./images/png/murray.png"
@@ -130,7 +198,6 @@
             </p>
           </div>
         </div>
-        
         <div class="slider_card d-flex align-items-center">
           <img
             src="./images/png/murray.png"
@@ -149,7 +216,6 @@
             </p>
           </div>
         </div>
-        
         <div class="slider_card d-flex align-items-center">
           <img
             src="./images/png/murray.png"
@@ -168,9 +234,45 @@
             </p>
           </div>
         </div>
-        
- 
-  </div>
+         <div class="slider_card d-flex align-items-center">
+          <img
+            src="./images/png/murray.png"
+            alt="murray"
+            class="slider_profile_img"
+          />
+          <div class="ms-3">
+            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
+              Murray
+            </h4>
+            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
+              Profit: $35,499
+            </p>
+            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
+              Current Balance: $68,187
+            </p>
+          </div>
+        </div>
+        <div class="slider_card d-flex align-items-center">
+          <img
+            src="./images/png/murray.png"
+            alt="murray"
+            class="slider_profile_img"
+          />
+          <div class="ms-3">
+            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
+              Murray
+            </h4>
+            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
+              Profit: $35,499
+            </p>
+            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
+              Current Balance: $68,187
+            </p>
+          </div>
+        </div>
+        </div>
+    </div>
+
 </div>
 </section>
 
@@ -182,7 +284,7 @@
   <div class="custom_container container position-relative">
     <div class=" pt-5 d-flex justify-content-center">
       <h2
-        class="ff_orbitron color-white text-center fw-normal lh_140 pt-3 text-2xl max_w_978"
+        class="ff_orbitron color-white text-center fw-normal lh_140 pt-3 px-md-5 px-xxl-0 text-2xl max_w_978"
       >
       How to
         <span class="color-green fw-bold"
@@ -192,10 +294,10 @@
         <span class="color-green fw-bold"> High Returns</span>
       </h2>
     </div>
-    <div class="my-5 bg-grey pb_72 d-flex justify-content-center flex-column position-relative px-2 px-sm-4">
+    <div class="mb-5 mt-4 my-sm-5 bg-grey pb_72 d-flex justify-content-center flex-column position-relative px-2 px-sm-4">
     <div class="py_78  row position-relative z-10">
 
-           <div class="col-sm-5 col-lg-4 px-xxl-0 d-none d-sm-block">
+           <div class="col-sm-5 col-lg-4 px-xxl-0 d-none d-md-block">
         <div class="d-flex justify-content-end">
         <h3 class="fw-bold text-lg color-white text-end max_w_178 sm_ai_stcok_text">Artificial Intelligence Stocks</h3> 
         <img src="./images/svg/artifical.svg" alt="atrical" class="ms-md-4 ms-1 ai_stock_svg">
@@ -220,7 +322,7 @@
            
            </div>
 
-           <div class="col-sm-5 col-lg-4 px-5 px-xxl-0">
+           <div class="col-sm-5 col-lg-4 px-lg-5 px-xxl-0">
             <div class="d-flex mt-4 mt-sm-0 align-items-center justify-content-sm-start">
               <img src="./images/svg/ai-revulation.svg" alt="atrical" class="me-md-4 me-1 ai_stock_svg">
             <h3 class="fw-bold text-lg color-white text-start max_w_178 sm_ai_stcok_text">Artificial Intelligence Stocks</h3> 
@@ -234,7 +336,7 @@
              </div>
          </div>
                </div>
-               <div class="col-sm-5 col-lg-4 d-sm-none px-5 px-xxl-0">
+               <div class="col-sm-5 col-lg-4 d-md-none px-lg-5 px-xxl-0">
                 <div class="d-flex mt-3 mt-sm-0 align-items-center justify-content-sm-start">
                   <img src="./images/svg/ai-revulation.svg" alt="atrical" class="me-md-4 me-1 ai_stock_svg">
                 <h3 class="fw-bold text-lg color-white text-start max_w_178 sm_ai_stcok_text">Artificial Intelligence Stocks</h3> 
@@ -260,7 +362,7 @@
  <!-- --------------understaing leveraged--------- -->
  <section>
   <div class="custom_container container">
-    <div class=" pt-sm-5 d-flex flex-column align-items-center justify-content-center">
+    <div class=" pt-sm-5 pt-m-3 pt-xl-5 d-flex flex-column align-items-center justify-content-center">
       <h2
         class="ff_orbitron color-white text-center fw-bold lh_150 text-2xl max_w_678"
       >
@@ -271,11 +373,11 @@
         Accounts and 
         <span class="color-green fw-bold"> Buying Power</span>
       </h2>
-      <p class="fw-normal text-sm color-white lh_150 mb-5 text-center mt-3 ff_orbitron max_w_812 sm_text_size"> Trading with leveraged accounts in CFDs provides traders with increased buying power, enabling them to attain superior results across various markets. By amplifying potential returns and accessing additional capital, traders can capitalize on market opportunities more effectively, enhancing their overall trading performance.</p>
+      <p class="fw-normal text-sm color-white lh_150 mb-4 mb-md-5 text-center mt-2 mt-sm-3 ff_orbitron max_w_812 sm_text_size"> Trading with leveraged accounts in CFDs provides traders with increased buying power, enabling them to attain superior results across various markets. By amplifying potential returns and accessing additional capital, traders can capitalize on market opportunities more effectively, enhancing their overall trading performance.</p>
     </div>
     <div class="row px-xxl-3">
       <div class="col-lg-6 px-xxl-0 d-flex flex-column justify-content-center align-items-center">
-        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start  p-sm-4 green_card">
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start   p-sm-4 green_card">
           <img src="./images/png/john-invested.png" alt="john-invested" class="john_invested">
           <p class="ff_orbitron lh_160 text-sm fw-normal color-white ps-3 pe-2 pe-lg-4"><span class="fw-bold">John invested</span> $250 without leverage, so his buying power was $250, and he could potentially earn up to $40.</p>
         </div>
@@ -300,9 +402,9 @@
         </div>
       </div>
       <div class="col-lg-6 px-xxl-0 d-flex flex-column justify-content-center mt-5  mt-lg-0 align-items-center">
-        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start p-sm-4 green_card">
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start px-2 px-sm-0  p-sm-4 green_card">
           <img src="./images/png/mike-invested.png" alt="mike-invested" class="john_invested">
-          <p class="ff_orbitron lh_160 text-sm fw-normal color-white ps-3 pe-xxl-5"><span class="fw-bold">Mike invested</span>the same amount but utilized leverage of 1 to 30, giving him a buying power of $7,500. With this leverage, Mike achieved returns of $1200, showcasing the significant impact of leveraging on potential gains.</p>
+          <p class="ff_orbitron lh_160 text-sm fw-normal color-white ps-sm-3 pe-xxl-5"><span class="fw-bold">Mike invested</span>the same amount but utilized leverage of 1 to 30, giving him a buying power of $7,500. With this leverage, Mike achieved returns of $1200, showcasing the significant impact of leveraging on potential gains.</p>
         </div>
         <div class="graph_card">
           <h4 class="text-xl fw-bold lh_120 ff_orbitron gradient_color">Non - Leveraged Accounts</h4>
@@ -320,7 +422,7 @@
           </div>
           <img src="./images/png/graph.png" alt="graph" class="w-100 my-4">
          <h5 class="p-2 text-xxl color-dark-green ff_orbitron d-flex align-items-center fw-bold">
-          $40 <span class=" text-md fw-semibold ms-2">Potential Earnings</span>
+          $1,200<span class=" text-md fw-semibold ms-2">Mike achieved returns</span>
          </h5>
         </div>
       </div>
@@ -339,7 +441,7 @@
 
     <div class="how_it_work_bg">
     <div class="custom_container container">
-      <div class=" pt-sm-5 d-flex flex-column align-items-center justify-content-center">
+      <div class=" pt-sm-5 pt-md-3 pt-xl-5 d-flex flex-column align-items-center justify-content-center">
         <h2
           class="ff_orbitron color-white text-center fw-bold lh_140 text-2xl">
         How it
@@ -389,7 +491,7 @@
       Statistics 
       <span class="fw-bold" >For Today</span >
     </h2>
-    <div class="row mt-3 pb-5 justify-content-center">
+    <div class="row mt-sm-3 pb-4 pb-sm-5 justify-content-center">
       <div class="col-sm-6 d-flex justify-content-center col-lg-4">
         <div class="counter_box">
               <div class="counter_digit_box d-flex flex-column justify-content-center align-items-center  mx-auto"> <h4 class="fw-bold ff_orbitron text-4xl">0<span class="counter" data-target="1">1 </span></h4> </div>
