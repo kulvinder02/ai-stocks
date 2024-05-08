@@ -136,10 +136,15 @@
 
 }
 .graph_btn{
+    transition: all 300ms ease-in-out;
     border: 1px solid transparent !important;
     padding:13.5px 27.5px  !important;
     background: #98BD42;
     margin-top: 63px;
+}
+.graph_btn:hover{
+    background: white;
+    color: #98BD42;
 }
 /* ----------how it work-------------- */
 .max_w_726{
@@ -147,26 +152,67 @@
 }
 .how_it_work_bg{
     background-image: url("../images/svg/half-circle-line.svg");
-    background-position:center;
-    height: 610px;
+    background-position:50% 20%;
+    height: 910px;
     background-repeat: no-repeat;
 }
+
 
 /* ------------statstics for today--------------- */
 .bg_green{
     background-color: #98BD42;
 }
 .counter_box{
-    padding: 33px;
+    padding: 33px !important;
     background: white;
     width: 360px;
-    min-height: 318px;
+    height: 318px;
 }
 .counter_digit_box{
     max-width: 199px;
     height: 173px;
     background-color: #DAE7BB;
     border: 1px solid #99A380;
+}
+.register_btn{
+    padding: 13.5px 20.5px !important;
+    width: 149px !important;
+    margin-top: 30px !important;
+}
+
+.company_names{
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    max-width: 145px;
+    height: 134px;
+    margin-bottom: 18px !important;
+}
+.company_names:hover{
+    transform: scale(1.05);
+}
+.logos_ellips{
+    bottom: -30%;
+    left: -20%;
+}
+.logos_ellip2{
+    right: -15%;
+    top: -30%;
+}
+.benifits_ellips{
+    bottom: -30%;
+    left: -32%;
+}
+.max_w_280{
+    max-width:270px;
+}
+.border_btn{
+    background: transparent !important;
+    border: 1px solid white;
+    padding: 13.5px 21.5px !important;
+}
+.work_steps_card{
+    margin-top: 260px !important;
+    padding-bottom: 128px !important;
 }
 @media (max-width:1200px) {
     .graph_card{
@@ -176,9 +222,23 @@
         max-width: 360px;
         padding: 23px;
     }
+  
+    
 }
 
-@media (max-width:992px) {
+@media (max-width:991.9px) {
+    .work_steps_card{
+        margin-top: 60px !important;
+        padding-bottom: 90px !important;
+    }
+    .how_it_work_bg{
+        background-image:none;
+    }   
+    .company_names{
+        max-width: 125px;
+        height: 114px;
+        margin-bottom: 18px !important;
+    }
     .counter_box{
         padding: 33px;
     }
@@ -191,10 +251,13 @@
     }
 }
 @media (max-width:768px) {
+    .counter_box {
+       padding: 20px !important;
+    }
     .graph_btn{
         margin-top: 23px;
     }
-    @m
+
  .sm_ai_stcok_text{
     font-size: 14px;
  }
@@ -203,7 +266,36 @@
     height: 40px;
  }
 }
-@media (max-width:576px) {
+@media (max-width:575.9px) {
+    .how_it_work_bg{
+        height: 1050px !important;
+    }
+    .work_steps_card{
+        margin-top: 40px !important;
+        padding-bottom: 128px !important;
+    }
+    .register_btn{
+       margin-bottom: 20px !important;
+        margin-top: 15px !important;
+    }
+    
+    .counter_digit_box {
+        max-width: 157px;
+        height: 95px;
+      
+    }
+    .counter_box {
+        height: 236px;
+        max-width: 282px;
+    }
+    .company_names{
+        max-width: 95px;
+        height: 70px;
+        margin-bottom: 10px !important;
+    }
+    .sm_text_size{
+        font-size: 12px !important ;
+    }
     .graph_card{
         max-width: 330px !important;
     }
@@ -218,10 +310,10 @@
         padding-bottom: 28px !important;
         padding-top: 28px !important;
     }
-    .green_circle{
+    .green_circle {
         margin-top: -40px;
         height: 120.58px;
-        width: 186.58px;
+        width: 125.58px;
     }
     .black_logo{
         width: 120px;
@@ -244,8 +336,27 @@
     }
     .menu_btn {
         margin-left: 5px;
-        padding:10px 10px  !important;
-        width: 36px;
-        height: 36px;
+        padding: 8px 6px !important;
+        width: 30px;
+        height: 31px;
+    }
+    .left_border_box {
+        padding: 13px 10px !important;
+    }
+}
+@media (max-width:380px) {
+    .how_it_work_bg{
+        height: 1090px !important;
+    }
+    .graph_card {
+        max-width: 261px !important;
+    }
+    .graph_btn {
+        padding: 4.5px 10.5px !important;
+    }
+    .company_names{
+        max-width: 85px;
+        height: 60px;
+     
     }
 }
