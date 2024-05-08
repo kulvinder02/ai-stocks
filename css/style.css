@@ -163,6 +163,8 @@
     background-color: #98BD42;
 }
 .counter_box{
+    position: relative;
+    z-index: 10;
     padding: 33px !important;
     background: white;
     width: 360px;
@@ -206,13 +208,26 @@
     max-width:270px;
 }
 .border_btn{
+    transition: all 300ms ease-in-out;
     background: transparent !important;
     border: 1px solid white;
     padding: 13.5px 21.5px !important;
 }
+.border_btn:hover{
+    color: white;
+    background-color: #98BD42 !important;
+}
 .work_steps_card{
     margin-top: 260px !important;
     padding-bottom: 128px !important;
+}
+.work_ellips{
+    bottom: -30%;
+    left: -30%;
+}
+.px_36{
+    padding-left: 36px !important;
+    padding-right: 36px !important;
 }
 @media (max-width:1200px) {
     .graph_card{
@@ -227,6 +242,10 @@
 }
 
 @media (max-width:991.9px) {
+    .px_36{
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
     .work_steps_card{
         margin-top: 60px !important;
         padding-bottom: 90px !important;
