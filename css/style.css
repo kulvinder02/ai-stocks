@@ -360,3 +360,8 @@
      
     }
 }
+@media (max-width:350px) {
+    .how_it_work_bg{
+        height: 1170px !important;
+    }
+}
