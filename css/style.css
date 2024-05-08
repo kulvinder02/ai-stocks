@@ -57,9 +57,12 @@
 /* ------slider srction--------- */
 .slider_card{
     height: 125.4px;
-    max-width: 309.81px;
+    width: 309.81px;
     padding: 14px !important;
     background: #151515;
+}
+.gap_17{
+    gap: 17px !important;
 }
 .slider_profile_img{
     width: 88.52px;
@@ -82,6 +85,23 @@
 .max_w_978{
     max-width: 978px;
 }
+.profile_slider {
+    width: calc(136 * 14);
+    -webkit-animation: scroll 15s linear infinite;
+    animation: scroll 15s linear infinite;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-136px * 7));
+      transform: translateX(calc(-136px * 7));
+    }
+  }
+
+
 /*---------- benifits---------- */
 .green_circle{
     background: #98BD42;
