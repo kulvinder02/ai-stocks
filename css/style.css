@@ -260,7 +260,7 @@
     padding-bottom: 128px !important;
 }
 .work_ellips{
-    bottom: -30%;
+    bottom: -3%;
     left: -30%;
 }
 .px_36{
@@ -277,7 +277,7 @@
     height: 37px;
 }
 .input_border:hover{
-    border: 1px solid #98BD42;
+    outline: 1px solid #98BD42 !important;
 }
 .form_btn{
     transition: all 200ms ease-in-out;
@@ -342,9 +342,27 @@
 .max_w_725{
     max-width: 725px;
 }
+.max_w_530{
+    max-width: 530px;
+}
 .accordion-button ,.accordion-body ,accordion-item{
     border: 1px solid transparent !important;
      background-color: #060802 !important;  
+}
+.graph_box{
+    padding: 8px !important;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.10);
+      border-radius: 10px;
+}
+/* ---------take first step----------- */
+.form_box{
+    max-width: 514px;
+
+}
+.hero_ellips{
+    left: 30%;
+    height: 280px !important;
+    filter: blur(250px) !important;
 }
 @media (min-width:1920px) {
     .hero_bg{
@@ -358,7 +376,7 @@
     }
     .mobile_frame {
         height: 605px;
-        padding: 54px 21px;
+        padding: 54px 28px;
     }
     .graph_card{
         max-width: 420px;
@@ -414,6 +432,10 @@
     }
 }
 @media (max-width:768px) {
+    .counter_box {
+        width: 299px;
+        height: 312px;
+    }
     .countdown_box{
         max-width: 100% !important;
     }
@@ -443,6 +465,13 @@
  }
 }
 @media (max-width:575.9px) {
+    .mt_moblie{
+        margin-top: 30px;
+    }
+    .ai_stock_svg{
+        margin-left: 10px !important;
+        padding-right: 10px !important;
+    }
     .accordion-button {
          padding: 14px 0px 14px 0px !important;
     }
@@ -469,8 +498,8 @@
         padding-bottom: 128px !important;
     }
     .register_btn{
-       margin-bottom: 20px !important;
-        margin-top: 5px !important;
+       margin-bottom: 12px !important;
+        margin-top: 13px !important;
     }
     
     .counter_digit_box {
@@ -544,7 +573,7 @@
         height: 1090px !important;
     }
     .graph_card {
-        max-width: 261px !important;
+        max-width: 292px !important;
     }
     .graph_btn {
         padding: 4.5px 10.5px !important;
@@ -556,6 +585,9 @@
     }
 }
 @media (max-width:350px) {
+    .mt_moblie{
+        margin-top: 2px;
+    }
     .vdio_box {
         padding: 7px !important;
     }
@@ -572,5 +604,8 @@
     }
     .green_card {
         min-height: 340px;
+    }
+    .graph_card {
+        max-width: 262px !important;
     }
 }
