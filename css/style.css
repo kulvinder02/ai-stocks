@@ -52,6 +52,7 @@
     background-image: url("../images/png/hero-bg.png");
     background-position:center;
     background-size: cover;
+    min-height: 100vh;
 }
 .mobile_frame{
     background-image: url("../images/png/mobile-frame.png");
@@ -305,7 +306,56 @@
 .countdown_box{
     width: 601px;
 }
+/* -----------faq----------- */
+.accordian_box{
+    max-width: 870px;
+}
+.accordion{
+    border:unset !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #060802 !important;
+    box-shadow:unset !important;  
+    padding: 31px 0px 11px 0px !important;
+  
+}
+.accordion-flush .accordion-item {
+    border-bottom: 1px solid #40501C !important;
+
+}
+.accordion-button::after{
+    margin-top: -28px !important;
+    background-image: url("../images/svg/accordian-btn.svg") !important;
+}
+.accordion-button {
+    border-bottom: 5px solid #40501C !important;
+    padding: 31px 0px 24px 0px !important;
+}
+.accordion-body{
+    position: relative;
+    z-index: 10;
+    border-bottom: 5px solid red !important;
+    background-color: #060802 !important;
+    padding: 4px 0px 24px 0px !important;
+}
+.max_w_725{
+    max-width: 725px;
+}
+.accordion-button ,.accordion-body ,accordion-item{
+    border: 1px solid transparent !important;
+     background-color: #060802 !important;  
+}
+@media (min-width:1920px) {
+    .hero_bg{
+     min-height: 50vh !important;
+    } 
+}
 @media (max-width:1200px) {
+    .p_69 {
+        padding:30px  0px 30px 0px  !important;
+      
+    }
     .mobile_frame {
         height: 605px;
         padding: 54px 21px;
@@ -329,6 +379,10 @@
 }
 
 @media (max-width:991.9px) {
+
+    .register_btn{
+        margin-top: 10px !important;
+    }
      .mobile_frame {
         height: 644px;
      }
@@ -389,6 +443,9 @@
  }
 }
 @media (max-width:575.9px) {
+    .accordion-button {
+         padding: 14px 0px 14px 0px !important;
+    }
     .vdio_box{
         margin-top: -40px;
     }
