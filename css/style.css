@@ -276,7 +276,7 @@
     padding: 8px !important;
     height: 37px;
 }
-.input_border:hover{
+input:hover{
     outline: 1px solid #98BD42 !important;
 }
 .form_btn{
@@ -357,12 +357,62 @@
 /* ---------take first step----------- */
 .form_box{
     max-width: 514px;
-
+  border: 1px solid #495C21;
 }
 .hero_ellips{
     left: 30%;
     height: 280px !important;
     filter: blur(250px) !important;
+}
+.py_30{
+    background: #181e0b;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.form_padding{
+    padding:25px 20px  !important;
+}
+.form2_input{
+    border: unset !important;
+    background-color: #1f2318 !important;
+}
+
+::placeholder , .number_text{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+   font-weight: 300;
+   color: #cbcec3 !important;
+}
+.number_text{
+  
+    border-right: 1px solid #595f4d;
+    font-weight: 400 !important;
+    padding:16px 13px !important;
+    background: #343927;
+}
+.sign_up_btn{
+    transition: all 300ms ease-in-out;
+    width: 100%;
+    border: none!important;
+    background: #98BD42;
+    padding: 14px !important;
+    margin-top: 42px;
+}
+.sign_up_btn:hover{
+    background: white;
+    color: #98BD42;
+}
+.group_logos{
+    max-width: 518.16px;
+    height: 534px;
+}
+.take_step_ellips{
+    top: -15%;
+    right: -28%;
+}
+.take_step_ellips2 {
+    bottom: -12%;
+    left: -23%;
 }
 @media (min-width:1920px) {
     .hero_bg{
@@ -370,12 +420,15 @@
     } 
 }
 @media (max-width:1200px) {
+    .group_logos {
+        height: 462px;
+    }
     .p_69 {
         padding:30px  0px 30px 0px  !important;
       
     }
     .mobile_frame {
-        height: 605px;
+        height: 645px;
         padding: 54px 28px;
     }
     .graph_card{
@@ -465,6 +518,9 @@
  }
 }
 @media (max-width:575.9px) {
+    .group_logos {
+        height: 368px;
+    }
     .mt_moblie{
         margin-top: 30px;
     }

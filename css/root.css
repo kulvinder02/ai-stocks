@@ -39,6 +39,8 @@
     --color-dark-white: #cfd0cd;
     --color-green: #98BD42;
     --color-dark-green: #2DB965;
+    --color-extradark-green: #495C21;
+    
 }
 
 /* line height */
@@ -93,6 +95,9 @@
 
 .color-dark-green {
     color: var(--color-dark-green);
+}
+.color-extradark-green {
+    color: var(--color-extradark-green);
 }
 
 .color-dark-white {
