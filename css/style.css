@@ -138,7 +138,7 @@
     max-width: 833px;
     background: #1D1f17;
     border-left: 8px solid #98BD42;
-    padding: 26px  31px !important;
+    padding: 26px  26px !important;
    
 }
 .pb_72{
@@ -147,13 +147,13 @@
 
 /* ---understaing--- */
 .max_w_678{
-    max-width: 778px;
+    max-width: 770px;
 }
 .max_w_812{
     max-width: 812px;
 }
 .green_card{
-    max-width: 524px;
+    max-width: 524px !important;
     border-radius: 16px;
     min-height: 260px;
     background: #98BD42;
@@ -178,7 +178,7 @@
     border: 1px solid transparent !important;
     padding:13.5px 27.5px  !important;
     background: #98BD42;
-    margin-top: 63px;
+    margin-top: 50px;
 }
 .graph_btn:hover{
     background: white;
@@ -230,9 +230,13 @@
 .company_names:hover{
     transform: scale(1.05);
 }
-.logos_ellips{
-    bottom: -30%;
-    left: -20%;
+.benifits_ellips2{
+    top: -38%;
+    right: -20%;
+}
+.logos_ellips {
+    bottom: -12%;
+    left: -15%;
 }
 .logos_ellip2{
     right: -15%;
@@ -270,21 +274,29 @@
 .mt_18{
     margin-top: 18px;
 }
+input{
+    transition:  all 200ms ease-in-out;
+    outline: none !important;
+    color: white !important;
+}
 .input_border{
     border: 1px solid #CCCCCC;
     border-radius: 100px;
     padding: 8px !important;
     height: 37px;
 }
+
 input:hover{
-    outline: 1px solid #98BD42 !important;
+    border:  1px solid #98BD42 !important;
+    transition: all 300ms ease-in-out;
+    outline:none !important;
 }
 .form_btn{
     transition: all 200ms ease-in-out;
     border: 1px solid transparent;
     background: #98BD42;
     border-radius: 87px;
-    max-width: 269px;
+    width: 269px;
     padding: 12.4px  95px  !important;
 }
 .form_btn:hover{
@@ -292,6 +304,7 @@ input:hover{
     color: white;
 }
 .vdio_box{
+    width: 100%;
     position: relative;
     z-index: 10;
     background: #000;
@@ -299,9 +312,20 @@ input:hover{
     border: 1px solid #3f4f1d;
     padding: 20px !important;
 }
-.hero_vdios{
-    max-width: 721px;
-    height: 324px;
+.hero_vdio{
+    object-fit: cover !important;
+    max-width: 100% !important;
+    width: 921px !important;
+    height: 324px !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.max_w_360{
+    max-width: 360px;
 }
 .countdown_box{
     width: 601px;
@@ -314,29 +338,40 @@ input:hover{
     border:unset !important;
 }
 .accordion-button:not(.collapsed) {
+    border-bottom: transparent !important;
     color: var(--bs-accordion-active-color);
-    background-color: #060802 !important;
+    background-color: transparent !important;
     box-shadow:unset !important;  
     padding: 31px 0px 11px 0px !important;
   
 }
 .accordion-flush .accordion-item {
     border-bottom: 1px solid #40501C !important;
-
+}
+.accordion-button:not(.collapsed)::after {
+    transition: all 500ms ease-in-out !important;
+    transform: rotate(180deg) !important;
+}
+.accordion-item{
+    background-color: transparent !important;
 }
 .accordion-button::after{
-    margin-top: -28px !important;
+    background-size: cover !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 32px !important;
+    margin-top: -4px !important;
     background-image: url("../images/svg/accordian-btn.svg") !important;
 }
 .accordion-button {
-    border-bottom: 5px solid #40501C !important;
+    transition: all 600ms ease-in-out !important;
+    border-bottom: 1px solid #40501C !important;
     padding: 31px 0px 24px 0px !important;
 }
 .accordion-body{
     position: relative;
     z-index: 10;
-    border-bottom: 5px solid red !important;
-    background-color: #060802 !important;
+    border-bottom: 1px solid #98BD42 !important;
     padding: 4px 0px 24px 0px !important;
 }
 .max_w_725{
@@ -346,8 +381,9 @@ input:hover{
     max-width: 530px;
 }
 .accordion-button ,.accordion-body ,accordion-item{
-    border: 1px solid transparent !important;
-     background-color: #060802 !important;  
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
 }
 .graph_box{
     padding: 8px !important;
@@ -364,6 +400,7 @@ input:hover{
     height: 280px !important;
     filter: blur(250px) !important;
 }
+
 .py_30{
     background: #181e0b;
     padding-top: 30px !important;
@@ -373,7 +410,7 @@ input:hover{
     padding:25px 20px  !important;
 }
 .form2_input{
-    border: unset !important;
+    border: 1px solid transparent !important;
     background-color: #1f2318 !important;
 }
 
@@ -408,15 +445,64 @@ input:hover{
 }
 .take_step_ellips{
     top: -15%;
-    right: -28%;
+    right: -14%;
 }
 .take_step_ellips2 {
     bottom: -12%;
     left: -23%;
 }
-@media (min-width:1920px) {
+
+/* -------------footer--------------- */
+.footr_icon_box{
+    margin-top: 10px;
+    gap: 12px;
+}
+.social_icon{
+    transition: all 300ms ease-in-out;
+}
+.social_icon:hover{
+    transform: translateY(-6px);
+}
+.fotter_line{
+    padding-top: 27px !important;
+    padding-bottom: 27px !important;
+    border-top: 1px solid #173717;
+}
+.fotter_ellips{
+    bottom: -13%;
+    right: -4%;
+}
+
+/*------------- vdiobos------------- */
+#videoContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#myVideo {
+    width: 100%;
+    height: auto;
+}
+#toggleButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.pause_btn{
+    height: 54.26px;
+    width: 54.26px;
+    background:  #98BD42;
+    border-radius: 46.13px;
+}
+ul{
+    padding-left: 0px !important;
+}
+@media (min-width:1930px) {
     .hero_bg{
-     min-height: 50vh !important;
+     min-height: 55vh !important;
     } 
 }
 @media (max-width:1200px) {
@@ -428,7 +514,7 @@ input:hover{
       
     }
     .mobile_frame {
-        height: 645px;
+        height: 622px;
         padding: 54px 28px;
     }
     .graph_card{
@@ -450,7 +536,12 @@ input:hover{
 }
 
 @media (max-width:991.9px) {
-
+    .graph_btn {
+        margin-top: 27px;
+    }
+    .accordion-body{
+        padding: 4px 0px 24px 8px !important;
+    }
     .register_btn{
         margin-top: 10px !important;
     }
@@ -466,6 +557,7 @@ input:hover{
         padding-bottom: 90px !important;
     }
     .how_it_work_bg{
+        height: 785px !important;  
         background-image:none;
     }   
     .company_names{
@@ -484,7 +576,7 @@ input:hover{
         width: 150px;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767.9px) {
     .counter_box {
         width: 299px;
         height: 312px;
@@ -518,8 +610,18 @@ input:hover{
  }
 }
 @media (max-width:575.9px) {
+  
+    .accordion-button::after {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 8px !important;
+    }
+    .fotter_line{
+        padding-top: 17px !important;
+        padding-bottom: 17px !important;
+    }
     .group_logos {
-        height: 368px;
+        height: 478px;
     }
     .mt_moblie{
         margin-top: 30px;
@@ -534,9 +636,7 @@ input:hover{
     .vdio_box{
         margin-top: -40px;
     }
-    .hero_vdios {
-        height: 133px;
-    }
+
     .pb_72{
         padding-bottom: 40px !important;
     }
@@ -547,10 +647,10 @@ input:hover{
         height: 70px;
     }
     .how_it_work_bg{
-        height: 1050px !important;
+        height: 1000px !important;
     }
     .work_steps_card{
-        margin-top: 40px !important;
+        margin-top: 30px !important;
         padding-bottom: 128px !important;
     }
     .register_btn{
@@ -623,10 +723,20 @@ input:hover{
         padding: 13px 10px !important;
     }
 }
-@media (max-width:380px) {
- 
+@media (max-width:540px) {
+    .hero_vdio {
+        height: 170px !important;
+    }
     .how_it_work_bg{
-        height: 1090px !important;
+        height: 970px !important;  
+    }
+}
+@media (max-width:380px) {
+    .group_logos {
+        height: 328px;
+    }
+    .how_it_work_bg{
+        height: 1030px !important;
     }
     .graph_card {
         max-width: 292px !important;
@@ -641,6 +751,9 @@ input:hover{
     }
 }
 @media (max-width:350px) {
+    .group_logos {
+        height: 283px;
+    }
     .mt_moblie{
         margin-top: 2px;
     }
@@ -656,7 +769,7 @@ input:hover{
         padding: 63px 17px;
     }
     .how_it_work_bg{
-        height: 1170px !important;
+        height: 1120px !important;
     }
     .green_card {
         min-height: 340px;
