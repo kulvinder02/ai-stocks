@@ -497,6 +497,9 @@ input::-webkit-inner-spin-button {
     background:  #98BD42;
     border-radius: 46.13px;
 }
+.error {
+    color: red;
+}
 ul{
     padding-left: 0px !important;
 }

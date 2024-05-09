@@ -54,7 +54,7 @@
           </div>
         </div>
       </nav>
-      <!-- hero sectionc -->
+      <!-- hero section -->
       <div class="hero_bg position-relative overflow-hidden">
         <div class="blur_circle position-absolute hero_ellips  d-none d-lg-block"></div>
 
@@ -94,26 +94,34 @@
               <h4 class="fw-bold ff_opensans lh_140 text-sm color-dark-grey text-center mt_moblie px-xl-3">This Is The Right Time to Invest In AI Stocks</h4>
               <p class="text-xxsm fw-normal lh_160 ff_opensans mt-2 text-center mb-4 pe-2 color-light-grey">In a matter of minutes one of our AI mentors will contact you, No Experience Required!</p>
          
-              <form action="submit" class="mt_18">
+              <form action="#" id="myForm" class="mt_18">
                 <div class="d-flex flex-column">
-                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">First Name </label>
-                <input required type="text" id="name" name="user_name" class="mt-1 input_border">
+                    <label for="firstName" class="fw-semibold text-xxs ff_opensans color-extralight-black">First Name</label>
+                    <input required type="text" id="firstName" name="firstName" class="mt-1 input_border">
+                    <span id="firstNameError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Last Name </label>
-                <input required type="text" id="name" name="user_name" class="mt-1 input_border">
+                    <label for="lastName" class="fw-semibold text-xxs ff_opensans color-extralight-black">Last Name</label>
+                    <input required type="text" id="lastName" name="lastName" class="mt-1 input_border">
+                    <span id="lastNameError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Email </label>
-                <input required type="email" id="name" name="user_name" class="mt-1 input_border">
+                    <label for="email" class="fw-semibold text-xxs ff_opensans color-extralight-black">Email</label>
+                    <input required type="email" id="email" name="email" class="mt-1 input_border">
+                    <span id="emailError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                  <label for="name" class="fw-semibold text-xxs ff_opensans color-extralight-black">Phone Number </label>
-                <input required type="number" id="name" name="user_name" class="mt-1 input_border">
-                <button class="mt-sm-4 mt-3 fw-bold lh_150 text-xxsm ff_opensans form_btn mx-auto">Get Started</button>
+                    <label for="phoneNumber" class="fw-semibold text-xxs ff_opensans color-extralight-black">Phone Number</label>
+                    <input required type="tel" id="phoneNumber" name="phoneNumber" class="mt-1 input_border">
+                    <span id="phoneNumberError" class="error"></span>
                 </div>
-              
-               </form>
+                <button type="submit" class="mt-sm-4 mt-3 fw-bold lh_150 text-xxsm ff_opensans form_btn mx-auto">Get Started</button>
+            </form>
+            
+            <!-- Popup Form -->
+            <div id="popupForm" style="display: none;">
+                <h2 class="bg-grey py-2 px-2 mt-2 text-md color-white rounded-3 ff_orbitron text-center">Form Submitted</h2>
+                </div>
              <div class="d-flex justify-content-center align-items-center">
               <button class="color-black text-xxsm  lh_140 fw-bold ff_opensans border-0 bg-transparent mt-2 mt-sm-3">3 Spots Left</button>
            
@@ -769,5 +777,62 @@
       }, 0)
   }());
 </script>
+<!-- form validation -->
+<script>
+  const form = document.getElementById('myForm');
+  const popupForm = document.getElementById('popupForm');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (validateForm()) {
+      
+          popupForm.style.display = 'block';
+        
+          form.reset();
+
+        
+          setTimeout(function() {
+              popupForm.style.display = 'none';
+          }, 2000);
+      }
+  });
+
+  function validateForm() {
+      let isValid = true;
+
+ 
+      document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+ 
+      if (!form.firstName.value.trim()) {
+          document.getElementById('firstNameError').textContent = 'First Name is required';
+          isValid = false;
+      }
+      if (!form.lastName.value.trim()) {
+          document.getElementById('lastNameError').textContent = 'Last Name is required';
+          isValid = false;
+      }
+      if (!form.email.value.trim()) {
+          document.getElementById('emailError').textContent = 'Email is required';
+          isValid = false;
+      } else if (!isEmailValid(form.email.value.trim())) {
+          document.getElementById('emailError').textContent = 'Please enter a valid email address';
+          isValid = false;
+      }
+      if (!form.phoneNumber.value.trim()) {
+          document.getElementById('phoneNumberError').textContent = 'Phone Number is required';
+          isValid = false;
+      }
+
+      return isValid;
+  }
+
+  function isEmailValid(email) {
+   
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+</script>
+
   </body>
 </html>
