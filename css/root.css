@@ -177,16 +177,14 @@
         --font-3xl: 42px !important;
     }
 }
-
-
 @media (max-width:768px) {
     :root {
         --font-4xl: 48px;
         --font-lg: 16px !important;
-        --font-2xl: 38px;
+        --font-2xl: 34px;
         --font-xl: 20px;
         --font-sm: 16px;
-        --font-3xl: 34px !important;
+        --font-3xl: 40px !important;
     }
 }
 

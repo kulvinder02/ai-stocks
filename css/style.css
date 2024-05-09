@@ -163,7 +163,7 @@
     height: 72px;
 }
 .graph_card{
-    margin-top: -80px;
+    margin-top: -60px;
     max-width: 471px;
     border-radius: 15px;
     background: white;
@@ -349,7 +349,7 @@ input::-webkit-inner-spin-button {
     border-bottom: 1px solid #40501C !important;
 }
 .accordion-button:not(.collapsed)::after {
-    transition: all 500ms ease-in-out !important;
+    transition: all 500ms linear !important;
     transform: rotate(180deg) !important;
 }
 .accordion-item{
@@ -366,7 +366,7 @@ input::-webkit-inner-spin-button {
 .accordion-button {
     transition: all 600ms ease-in-out !important;
     border-bottom: 1px solid #40501C !important;
-    padding: 31px 0px 24px 0px !important;
+    padding: 24px 0px 24px 0px !important;
 }
 .accordion-body{
     position: relative;
@@ -514,7 +514,7 @@ ul{
       
     }
     .mobile_frame {
-        height: 622px;
+        height: 638px;
         padding: 54px 28px;
     }
     .graph_card{
@@ -610,10 +610,9 @@ ul{
  }
 }
 @media (max-width:575.9px) {
-  
     .accordion-button::after {
-        width: 24px !important;
-        height: 24px !important;
+        width: 18px !important;
+        height: 17px !important;
         font-size: 8px !important;
     }
     .fotter_line{
