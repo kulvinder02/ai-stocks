@@ -42,6 +42,7 @@
     --color-dark-green: #2DB965;
     --color-extradark-green: #495C21;
     --color-medium-white: #D0D0D0;
+    --color-pink: #D221EB;
     
 }
 
@@ -70,7 +71,9 @@
 .color-light-grey {
     color: var(--color-light-grey);
 }
-
+.gradient_color {
+    color: var(--color-pink);
+}
 .color-dark-grey {
     color: var(--color-dark-grey);
 }
@@ -96,7 +99,9 @@
 .color-green {
     color: var(--color-green);
 }
-
+.bg_green {
+    background-color: var(--color-green);
+}
 .color-dark-green {
     color: var(--color-dark-green);
 }
