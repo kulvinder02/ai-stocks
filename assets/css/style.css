@@ -172,9 +172,7 @@
     padding: 26px 26px !important;
 
 }
-.left_border_box:hover{
-    border-left: 8px solid white;
-}
+
 .left_border_box:hover .numerical_hilight_text{
     transition: all 400ms ease-in-out;
     color: #173717;
@@ -661,6 +659,9 @@ ul {
 }
 
 @media (max-width:991.9px) {
+    .tab_button {
+        padding: 10.5px 24px !important;
+    }
     .tab_btn_box{
         max-height: 140px;
         overflow-y: scroll;
@@ -761,6 +762,24 @@ ul {
 }
 
 @media (max-width:575.9px) {
+    .border_btn {
+        padding: 10.5px 10.5px !important;
+    }
+    .green_card2 {
+        min-height: 219px !important;
+    }
+    .read_more_btn {
+
+        padding: 8.5px 16.1px !important;
+    }
+    .top_ai_ellips {
+        right: -113%;
+        top: 32%;
+    }
+    .tab_logos_pics {
+        width: 135px;
+        height: 103px;
+    }
     .video_button{
         margin-top: -40px;
         width: 40px;
@@ -771,7 +790,7 @@ ul {
         margin-top: 32px;
     }
     .input_border {
-        height: 25px;
+        height: 32px;
     }
     .number_text {
         padding: 9px 13px !important;
@@ -929,12 +948,11 @@ ul {
 }
 
 @media (max-width:380px) {
+    .how_it_work_bg {
+        height: 1000px !important;
+    }
     .group_logos {
         height: 328px;
-    }
-
-    .how_it_work_bg {
-        height: 1030px !important;
     }
 
     .graph_card {
@@ -973,7 +991,7 @@ ul {
     }
 
     .how_it_work_bg {
-        height: 1120px !important;
+        height: 1040px !important;
     }
 
     .green_card {
