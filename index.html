@@ -157,13 +157,13 @@
                 <p class="text-center fw-light mt-3 mt-lg-0 mb-2 color-white ff_opensans d-none d-sm-block lh_140 text-md">Due to extremely high demand for media coverage, registration closes in</p>
                 <div id="countdown " class="d-none d-sm-block">
                   <ul  class="mt-2 mt-lg-0 countdown_box mx-auto d-flex align-items-center justify-content-center justify-content-md-between">
-                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="days"></span>days</li>
+                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light coutdown_digit_box"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="days"></span>days</li>
                     <li>   <img src="./assets/images/svg/counter-dots.svg"  class="countdown_dots" alt="dots"></li>
-                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="hours"></span>Hours</li>
+                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light coutdown_digit_box"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="hours"></span>Hours</li>
                        <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
-                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="minutes"></span>Minutes</li>
+                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light coutdown_digit_box"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="minutes"></span>Minutes</li>
                        <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
-                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="seconds"></span>Seconds</li>
+                    <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light coutdown_digit_box"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="seconds"></span>Seconds</li>
                   </ul>
                 </div>
                
@@ -773,12 +773,12 @@
  </section>
 
  <!-- --------------trade long and short---------- -->
- <section class="my-xl-5 py-xl-5">
+ <section class="mb-5 my-xl-5 py-xl-5">
 <div class="custom_container container mt-5 pt-lg-5">
   <div class="row align-items-center justify-content-md-between justify-content-center flex-wrap-reverse">
-    <div class="col-lg-5 col-md-6 col-sm-8 px-lg-2 position-relative travel_phone_image">
+    <div class="col-lg-5 col-md-5 col-sm-8 px-lg-2 position-relative travel_phone_image">
       <lottie-player id="company" src="./assets/json/phone-1.json" speed=".55"
-        class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay></lottie-player>
+        class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-md-0" autoplay></lottie-player>
       <lottie-player id="invest" src="./assets/json/phone-2.json" speed=".4"
         class="position-relative d_none z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay>
       </lottie-player>
@@ -788,26 +788,23 @@
       </lottie-player>
 
       <div class="phone_bubble linear_bg position-absolute top-50 start-50 translate-middle z-0"></div>
-      <a href="#contact"
-        class="text-white text-center sign_up_btn rounded-pill linear_bg border-0 fs_sm fw-bold ff_open_sans mt-4 register_button d-block w-100 d-md-none">
-        Open Your account
-      </a>
     </div>
 
-    <div class="col-xl-7 col-md-6 trade_leverage_parent px-lg-0 pe-0 ps-md-2 ps-0">
+    <div class="col-md-7 col-sm-8 trade_leverage_parent px-lg-0 pe-0 ps-md-2 ps-0">
       <h2
-      class="ff_orbitron color-white  fw-normal lh_140 sm_lh_110 text-2xl" >
+      class="ff_orbitron color-white  text-center text-md-start fw-normal lh_140 px-1  px-md-0 pe-md-0 sm_lh_110 text-2xl" >
       <span class="color-green fw-bold">Trade long</span>
       and short with
       <span class="color-green fw-bold">leverage in CFDs</span>
     </h2>
-      <p class="text-md fw-normal lh_140 my-4 ff_opensans color-white">
+      <p class="text-md fw-normal lh_140 text-center text-md-start my-3 my-sm-2 my-lg-4 ff_opensans color-white">
         Stocks, Forex, Indices and more
       </p>
+
       <div
-        class="trade_shares d-flex flex-column justify-content-center align-items-center align-items-md-start gap-3 pt-3 mt-1 pb-4 trade_timeline position-relative">
+        class="trade_shares d-flex flex-column justify-content-center align-items-center align-items-md-start gap-3 pt-3 pt mt-1 pb-4 trade_timeline position-relative">
         <div data-title="company"
-          class="d-flex align-items-center gap-lg-5 gap-3 trade_line_first position-relative">
+          class="d-flex align-items-center slider_after_line_dots trade_line_first position-relative">
           <span onclick="changeImageHandler('company')"
             class="trade_shares_btns text-lg fw-normal ff_opensans lh_140 op_80 color-white trade_shares_active_btns leverage-tab d-flex align-items-center  cursior_pointer ">
             Choose your favourite company
@@ -816,7 +813,7 @@
             class="timeline_dot cursior_pointer rounded-pill active_timeline_dot duration_300"></span>
         </div>
         <div data-title="invest"
-          class="d-flex align-items-center gap-lg-5 gap-3 trade_line_second position-relative">
+          class="d-flex align-items-center slider_after_line_dots trade_line_second position-relative">
           <span onclick="changeImageHandler('invest')"
             class="trade_shares_btns leverage-tab d-flex align-items-center cursior_pointer text-lg fw-normal ff_opensans lh_140 op_80 color-white">
             Select how mucoih to invest
@@ -824,7 +821,7 @@
           <span onclick="changeImageHandler('invest')"
             class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
         </div>
-        <div data-title="shares" class="d-flex align-items-center gap-lg-5 gap-3">
+        <div data-title="shares" class="d-flex align-items-center slider_after_line_dots">
           <span onclick="changeImageHandler('shares')"
             class="trade_shares_btns leverage-tab d-flex align-items-center  cursior_pointer text-lg fw-normal ff_opensans lh_140 op_80 color-white ">
             Get your shares in seconds
@@ -833,9 +830,11 @@
             class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
         </div>
       </div>
+     <div class="d-flex justify-content-center justify-content-md-start">
       <a href="#contact"
-        class="color-white account_open border-0 text-sm fw-bold ff_orbitron lh_160">Open
-        Your account</a>
+      class="color-white account_open border-0 text-sm fw-bold ff_orbitron lh_160">Open
+      Your account</a>
+     </div>
     </div>
   </div>
 </div>
