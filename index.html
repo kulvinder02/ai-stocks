@@ -20,6 +20,21 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- slider links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
   </head>
   <body class="bg-black">
@@ -131,159 +146,132 @@
           <div class="col-12 col-lg-8 d-flex align-items-center   mt-5 mt-sm-0 mt-md-3 mt-xl-0 order-0">
              <div class="video_box mx-auto">
               <div class="w-100">
-                <div id="videoContainer">
+                <div id="videoContainer" class="mb-sm-2">
                   <video id="myVideo" autoplay="true" loop="true" controls="false"  class="w-100 hero_video ">
                       <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                   </video>
-                  <button id="toggleButton" onclick="toggleVideo()" class="pause_btn border-0 d-flex justify-content-center align-items-center"><img src="./assets/images/svg/start-vector.svg" alt="pause"></button>
+                  <button id="toggleButton" onclick="toggleVideo()" class="pause_btn border-0 d-flex justify-content-center align-items-center"><img src="./assets/images/svg/start-vector.svg" class="video_button" alt="pause"></button>
               </div>
               </div>
            
-                <p class="text-center fw-light mt-3 mt-lg-0 mb-2 color-white ff_opensans lh_140 text-md">Due to extremely high demand for media coverage, registration closes in</p>
-                <div id="countdown">
+                <p class="text-center fw-light mt-3 mt-lg-0 mb-2 color-white ff_opensans d-none d-sm-block lh_140 text-md">Due to extremely high demand for media coverage, registration closes in</p>
+                <div id="countdown " class="d-none d-sm-block">
                   <ul  class="mt-2 mt-lg-0 countdown_box mx-auto d-flex align-items-center justify-content-center justify-content-md-between">
                     <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="days"></span>days</li>
-                    <li>   <img src="./assets/images/svg/counter-dots.svg" alt="dots"></li>
+                    <li>   <img src="./assets/images/svg/counter-dots.svg"  class="countdown_dots" alt="dots"></li>
                     <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="hours"></span>Hours</li>
-                       <li>   <img src="./assets/images/svg/counter-dots.svg" alt="dots"></li>
+                       <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
                     <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="minutes"></span>Minutes</li>
-                       <li>   <img src="./assets/images/svg/counter-dots.svg" alt="dots"></li>
+                       <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
                     <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="seconds"></span>Seconds</li>
                   </ul>
                 </div>
                
              </div>
           </div>
+         
         </div>
+        <div class=" mx-auto d-sm-none mt-4">
+          <p class="text-center fw-light mt-1 mt-lg-0 mb-2 color-white ff_opensans lh_140 text-md px-4">Due to extremely high demand for media coverage, registration closes in</p>
+          <div id="countdown "  class="mb-3 mt-2">
+            <ul  class="mt-2 mt-lg-0 countdown_box mx-auto d-flex align-items-center justify-content-center justify-content-md-between">
+              <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="day"></span>days</li>
+              <li>   <img src="./assets/images/svg/counter-dots.svg"  class="countdown_dots" alt="dots"></li>
+              <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="hour"></span>Hours</li>
+                 <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
+              <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="minute"></span>Minutes</li>
+                 <li>   <img src="./assets/images/svg/counter-dots.svg" class="countdown_dots"  alt="dots"></li>
+              <li class="d-flex flex-column justify-content-center align-items-center color-white ff_opensans text-md lh_140 text_sm_xsm fw-light"><span class="fw-bold color-white ff_orbitron text-3xl lh_140 countdown_text" id="second"></span>Seconds</li>
+            </ul>
+          </div>
+         
+       </div>
       </div>
     </div>
     </section>
 
     <!-- slider section -->
-    <!-- <section>
-    <div class="p_69  position-relative ">
-      <div class="blur_circle position-absolute slider_blur_ellips d-none d-lg-block"></div>
-
-      <div class="overflow-hidden py-sm-3 py-2">
-        <div class="d-flex align-items-center profile_slider logo_gap  gap-4">
-            
-        <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-        <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-        <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-        <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-         <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-        <div class="slider_card d-flex align-items-center">
-          <img
-            src="./assets/images/webp/murray.webp"
-            alt="murray"
-            class="slider_profile_img"
-          />
-          <div class="ms-3">
-            <h4 class="color-white ff_opensans fw-bold text-md lh_140">
-              Murray
-            </h4>
-            <p class="mt-2 ff_opensans color-white fw-normal text-xsm lh_150">
-              Profit: $35,499
-            </p>
-            <p class="ff_opensans color-white fw-normal text-xsm lh_150">
-              Current Balance: $68,187
-            </p>
-          </div>
-        </div>
-        </div>
-    </div>
+<section>
+  <div class="d-flex align-items-center gap-3 mx-auto slide_container ">
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/felicia.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Felicia</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$2,o41</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$4,587</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/brian.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Brian</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$62,233</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$105,080</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/murray.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Murray</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$35,449</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$68,187</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/tamara.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Tamara</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$4,930</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$12,230</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/murray.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Brent</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$32,911</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$12,230</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/felicia.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Felicia</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$2,o41</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$4,587</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/brian.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Brian</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$62,233</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$105,080</span></p>
+      </div>
+   </div>
+   <div class="slider_card d-flex align-items-center">
+    <img src="./assets/images/webp/murray.webp" alt="murray" class="slider_profile_img">
+      <div class="ps-2">
+        <h4 class="fw-bold text-md lh_140 ff_opensans color-white">
+          Murray</h4>
+        <p class="color-white mt-2 fw-normal lh_150 ff_opensans text-xsm">  Profit: <span class="color-green fw-bold">$35,449</span></p>
+        <p class="color-white fw-normal lh_150 ff_opensans text-xsm">Current Balance:<span class="color-green fw-bold">$68,187</span></p>
+      </div>
+   </div>  
 
 </div>
-</section> -->
+</section>
 
  <!-- --------------understaing leveraged--------- -->
- <section  class="mt-5 pt-xl-4"> 
-  <div class="custom_container container">
+ <section  class="mt-lg-5 pt-xl-4 position-relative"> 
+  <div class="custom_container pt-xl-3 container">
     <div class=" pt-sm-2 pt-lg-3 pt-xl-5 d-flex flex-column align-items-center justify-content-center">
       <h2
         class="ff_orbitron color-white text-center fw-bold lh_150 sm_lh_110 text-2xl col-lg-9"
@@ -336,11 +324,11 @@
           </div>
           <div class=" mb-sm-2 d-flex align-items-center justify-content-between">
             <p class="fw-normal ff_orbitron text-sm lh_160 color-light-grey">Leverage</p>
-            <p class="fw-bold ff_orbitron text-sm lh_160 color-blacky">0</p>
+            <p class="fw-bold ff_orbitron text-sm lh_160 color-blacky">30x</p>
           </div>
           <div class=" d-flex align-items-center justify-content-between">
             <p class="fw-normal ff_orbitron text-sm lh_160 color-light-grey">Buying Power</p>
-            <p class="fw-bold ff_orbitron text-sm lh_160 color-blacky">$250</p>
+            <p class="fw-bold ff_orbitron text-sm lh_160 color-blacky">$7,500</p>
           </div>
           <img src="./assets/images/webp/graph2.webp" alt="graph" class="w-100 my-2 my-sm-4">
          <h5 class="p-2 text-xxl color-dark-green ff_orbitron d-flex align-items-center fw-bold graph_box">
@@ -370,8 +358,8 @@
    >
   </h2>
   <div class="row mt-md-4 mt-lg-5 mt-3 mt-lg-5 pt-1 justify-content-center justify-content-lg-start">
-    <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start">
-    <div id="top_ai_tabs" class="tab_btn_box d-flex align-items-start flex-column position-relative pb-4 mb-2">
+    <div class="col-md-6 d-flex justify-content-center justify-content-lg-start">
+    <div id="top_ai_tabs" class="tab_btn_box tab_slider d-flex align-items-start flex-column position-relative">
       <div class="tab_button"
         onclick="opentabs('tab1')">
         <h3 class="text-sm color-white ff_orbitron fw-bold d-flex align-items-center lh_130" ><span><img src="./assets/images/svg/tab-pause-icon.svg" class="me-3" alt="pause"></span> Co-pilot 1 year 64% Growth </h3>
@@ -402,15 +390,23 @@
       <h3 class="text-sm color-white ff_orbitron lh_130 fw-bold d-flex align-items-center" ><span><img src="./assets/images/svg/tab-pause-icon.svg" class="me-3" alt="pause"></span> 
         AI GPU 1 year 228% Growth   </h3>
     </div>
+    <div class="tab_button"
+    onclick="opentabs('tab1')">
+    <h3 class="text-sm color-white ff_orbitron fw-bold d-flex align-items-center lh_130" ><span><img src="./assets/images/svg/tab-pause-icon.svg" class="me-3" alt="pause"></span> Co-pilot 1 year 64% Growth </h3>
+  </div>
+  <div class="tab_button"
+  onclick="opentabs('tab2')">
+  <h3 class="text-sm color-white ff_orbitron fw-bold d-flex align-items-center lh_130" ><span><img src="./assets/images/svg/tab-pause-icon.svg" class="me-3" alt="pause"></span>AI 1 year 69% Growth</h3>
+</div>
     </div>
   </div>
-  <div class="col-sm-10 col-md-8 col-lg-6 mt-4 mt-lg-5 mt-lg-0 px-xl-0 d-flex justify-content-center align-items-center">
+  <div class="col-sm-10 col-md-8 col-lg-6 mt-4 mt-lg-5 mt-xl-0 px-xl-0 d-flex justify-content-center align-items-center">
       <div id="tab1" class="tab_content">
          <img src="./assets/images/webp/amazon.webp" class="tab_logos_pics" alt="amazon">
           <h4 class="color-white lh_130 text-xlg ff_orbitron fw-bold my-2 my-sm-3">Amazon AWS - AI<br>
            <span class="color-green"> 1 year 69% </span> Growth </h4>
            <p class="text-sm fw-normal lh_160 ff_opensans mb-sm-3 pb-3 color-white op_80">Amazon A tech juggernaut with AWS cloud services, offering diverse solutions for investors. With market leadership in cloud computing, e-commerce, and more, Amazon shows strong growth potential. Its dominance in AWS cloud services, e-commerce, and innovation make it an attractive investment. Backed by technological prowess, Amazon remains a top choice for investors</p>
-           <button class="ff_orbitron text-sm fw-bold color-white lh_160  bg_green border-0 read_more_btn ">Read more</button>
+           <button id="openPopup" class="ff_orbitron text-sm fw-bold color-white lh_160  bg_green border-0 read_more_btn ">Read more</button>
       </div>
       <div id="tab2" class="tab_content">
         <img src="./assets/images/webp/reliance.webp" class="tab_logos_pics" alt="amazon">
@@ -456,6 +452,59 @@
 </div>
     
     </div>
+</div>
+
+<div id="popup" class="popup_modals">
+  <div class="popup_content z-3 bg_popup">
+      <span class="popup_close" id="closePopup"><img src="./assets/images/svg/poppop-cross-btn.svg"
+              alt="popup-cross-btn"></span>
+      <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-xl-start align-items-center">
+              <img src="./assets/images/webp/nvidia.png" alt="ai-logo1"
+                  class=" modals_logo mb-3">
+              <h3
+                  class="ff_montserrat text-xxl text-sm-start text-center fw-bold mb-sm-3 mb-2 text-white lh_150">
+                  <span class="d-lg-block">AI GPU 1 year 228% Growth</span>
+                  228% Growth
+              </h3>
+              <p
+                  class="ff_montserrat fw-normal text-lg-start text-center modals_para text-sm text-white op_80 lh_150">
+                  NVIDIA Corporation, a powerhouse in GPU technology and AI innovation, offers investors compelling opportunities. With dominance in gaming and data center markets, NVIDIA stands poised for growth. Diversification efforts into AI, autonomous vehicles, and strategic acquisitions further bolster its potential. As a leader in technology and with a strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
+          </div>
+          <div class="col-lg-6 px-xl-1 mt-3 mt-md-4 mt-lg-0">
+            <div class="modals_form_box">
+               <h4 class="fw-bold text-xl lh_140 ff_opensans">Start Trading with AI Stocks !</h4>
+
+               <form action="">
+              <div class="d-flex gap-2 mt-4 pt-2">
+                <div class="d-flex col-6 flex-column">
+                  <label for="firstName" class="fw-normal text-xm ff_opensans color-black mb-2">First Name</label>
+                  <input required type="text" id="firstName" name="firstName" class="modals_form">
+                  <span id="firstNameError" class="error"></span>
+              </div>
+              <div class="d-flex col-6 flex-column">
+                <label for="firstName" class="fw-normal text-xm ff_opensans color-black mb-2">Last Name</label>
+                <input required type="text" id="firstName" name="firstName" class="modals_form">
+                <span id="firstNameError" class="error"></span>
+            </div>
+              </div>
+              <div class="d-flex flex-column mt-2">
+                <label for="email" class="fw-normal text-xm ff_opensans color-black mb-2">Email </label>
+                <input required type="email" id="email" name="email" class="modals_form_email">
+                <span id="firstNameError" class="error"></span>
+            </div>
+            <div class="d-flex flex-column mt-2">
+              <label for="number" class="fw-normal text-xm ff_opensans color-black mb-2">Phone Number </label>
+              <input required type="number" id="number" name="number" class="modals_form_email">
+              <span id="firstNameError" class="error"></span>
+          </div>
+          <button class="border-0 bg_green ff_orbitron text-sm fw-bold lh_160 color-white modal_form_btn">Start Trading With [Nvidia]</button>
+               </form>
+            </div>
+          </div>
+        
+      </div>
+  </div>
 </div>
 
   </div>
@@ -723,6 +772,75 @@
   </div>
  </section>
 
+ <!-- --------------trade long and short---------- -->
+ <section class="my-xl-5 py-xl-5">
+<div class="custom_container container mt-5 pt-lg-5">
+  <div class="row align-items-center justify-content-md-between justify-content-center flex-wrap-reverse">
+    <div class="col-lg-5 col-md-6 col-sm-8 px-lg-2 position-relative travel_phone_image">
+      <lottie-player id="company" src="./assets/json/phone-1.json" speed=".55"
+        class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay></lottie-player>
+      <lottie-player id="invest" src="./assets/json/phone-2.json" speed=".4"
+        class="position-relative d_none z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay>
+      </lottie-player>
+      </lottie-player>
+      <lottie-player id="shares" src="./assets/json/phone-3.json" speed=".28"
+        class="position-relative d_none z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay>
+      </lottie-player>
+
+      <div class="phone_bubble linear_bg position-absolute top-50 start-50 translate-middle z-0"></div>
+      <a href="#contact"
+        class="text-white text-center sign_up_btn rounded-pill linear_bg border-0 fs_sm fw-bold ff_open_sans mt-4 register_button d-block w-100 d-md-none">
+        Open Your account
+      </a>
+    </div>
+
+    <div class="col-xl-7 col-md-6 trade_leverage_parent px-lg-0 pe-0 ps-md-2 ps-0">
+      <h2
+      class="ff_orbitron color-white  fw-normal lh_140 sm_lh_110 text-2xl" >
+      <span class="color-green fw-bold">Trade long</span>
+      and short with
+      <span class="color-green fw-bold">leverage in CFDs</span>
+    </h2>
+      <p class="text-md fw-normal lh_140 my-4 ff_opensans color-white">
+        Stocks, Forex, Indices and more
+      </p>
+      <div
+        class="trade_shares d-flex flex-column justify-content-center align-items-center align-items-md-start gap-3 pt-3 mt-1 pb-4 trade_timeline position-relative">
+        <div data-title="company"
+          class="d-flex align-items-center gap-lg-5 gap-3 trade_line_first position-relative">
+          <span onclick="changeImageHandler('company')"
+            class="trade_shares_btns text-lg fw-normal ff_opensans lh_140 op_80 color-white trade_shares_active_btns leverage-tab d-flex align-items-center  cursior_pointer ">
+            Choose your favourite company
+          </span>
+          <span onclick="changeImageHandler('company')"
+            class="timeline_dot cursior_pointer rounded-pill active_timeline_dot duration_300"></span>
+        </div>
+        <div data-title="invest"
+          class="d-flex align-items-center gap-lg-5 gap-3 trade_line_second position-relative">
+          <span onclick="changeImageHandler('invest')"
+            class="trade_shares_btns leverage-tab d-flex align-items-center cursior_pointer text-lg fw-normal ff_opensans lh_140 op_80 color-white">
+            Select how mucoih to invest
+          </span>
+          <span onclick="changeImageHandler('invest')"
+            class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
+        </div>
+        <div data-title="shares" class="d-flex align-items-center gap-lg-5 gap-3">
+          <span onclick="changeImageHandler('shares')"
+            class="trade_shares_btns leverage-tab d-flex align-items-center  cursior_pointer text-lg fw-normal ff_opensans lh_140 op_80 color-white ">
+            Get your shares in seconds
+          </span>
+          <span onclick="changeImageHandler('shares')"
+            class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
+        </div>
+      </div>
+      <a href="#contact"
+        class="color-white account_open border-0 text-sm fw-bold ff_orbitron lh_160">Open
+        Your account</a>
+    </div>
+  </div>
+</div>
+ </section>
+
    <!-- -----------Take first step in ai------------- -->
    <section class="position-relative">
     <div class="blur_circle position-absolute take_step_ellips  d-none d-lg-block"></div>
@@ -815,6 +933,21 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+  <!-- LOTTIE PLAYER  -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- slider links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
      <!-- counter -->
      <script>
@@ -880,6 +1013,49 @@
           document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
           document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+   
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+
+      }, 0)
+  }());
+</script>
+
+<!----- count down2 --- -->
+<script>
+  (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("day").innerText = Math.floor(distance / (day)),
+          document.getElementById("hour").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minute").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("second").innerText = Math.floor((distance % (minute)) / second);
 
    
         if (distance < 0) {
@@ -1032,6 +1208,224 @@
   activetab.classList.add("activeunder");
 }
 opentabs("tab1");
+</script>
+   
+<!-- pop modals -->
+<script>
+  var openButton = document.getElementById("openPopup");
+        var closeButton = document.getElementById("closePopup");
+        var popup = document.getElementById("popup");
+
+        openButton.onclick = function () {
+            popup.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        closeButton.onclick = function () {
+            popup.style.display = "none";
+            document.body.style.overflow = "";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+                document.body.style.overflow = "";
+            }
+        }
+</script>
+
+
+<!-- slider -->
+<script>
+   $('.tab_slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay:true,
+    slidesToShow: 7,
+    centerMode: true,
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+    focusOnSelect: true
+ });
+</script>
+
+<!-- Trade long and short with leverage in CFDs -->
+<script>
+  const lottiePlayers = {
+  company: {
+    element: document.getElementById("company"),
+    played: false,
+  },
+  invest: {
+    element: document.getElementById("invest"),
+    played: false,
+  },
+  shares: {
+    element: document.getElementById("shares"),
+    played: false,
+  },
+};
+
+let activeButtonIndex = 0; // To keep track of the currently active button index
+let timer; // Timer variable
+let automaticSwitching = true; // Flag to control automatic button switching
+
+// Function to reset timer and switch to the next button
+const resetTimerAndSwitchButton = () => {
+  clearTimeout(timer); // Reset the timer
+  if (automaticSwitching) {
+    activeButtonIndex = (activeButtonIndex + 1) % buttonValues.length; // Increment the active button index cyclically
+    changeImageHandler(buttonValues[activeButtonIndex]); // Change the image to the next button
+    timer = setTimeout(resetTimerAndSwitchButton, 6000); // Start the timer again
+  }
+};
+
+// Function to handle button clicks
+const changeImageHandler = (value) => {
+  // Restart the currently playing animation before starting a new one
+  restartCurrentAnimation();
+
+  // If the clicked button is not already active, update the active button index and start automatic switching
+  if (activeButtonIndex !== buttonValues.indexOf(value)) {
+    clearTimeout(timer); // Clear the timer
+    activeButtonIndex = buttonValues.indexOf(value); // Update the active button index
+    automaticSwitching = true; // Set automatic switching flag to true
+    startAutomaticButtonSwitching(); // Restart automatic button switching
+  }
+
+  // Call the changeLottiePlayer function with the clicked button value
+  changeLottiePlayer(value);
+};
+
+// Function to restart the currently playing animation
+const restartCurrentAnimation = () => {
+  for (const player of Object.values(lottiePlayers)) {
+    if (player.element.playing) {
+      player.element.stop(); // Stop the current animation
+      player.element.goToAndPlay(0); // Go to the beginning and play again
+    }
+  }
+};
+
+// Define an array of button values
+const buttonValues = ["company", "invest", "shares"];
+
+// Event listeners for buttons
+buttonValues.forEach((value, index) => {
+  const button = document.querySelector(
+    `[data-title="${value}"] .trade_shares_btns`
+  );
+  button.addEventListener("click", () => {
+    clearTimeout(timer); // Clear the timer
+    activeButtonIndex = index; // Update the active button index
+    changeImageHandler(value); // Change image to the clicked button
+    automaticSwitching = true; // Set automatic switching flag to true
+    startAutomaticButtonSwitching(); // Restart automatic button switching
+  });
+});
+document
+  .querySelector(".trade_line_first")
+  .classList.add("tradeLinetransitionFirst");
+const changeLottiePlayer = (value) => {
+  // Hide all Lottie players initially
+  for (const player of Object.values(lottiePlayers)) {
+    player.element.style.display = "none";
+    player.element.loop = false; // Set loop to false for all players
+  }
+
+  // Show the clicked Lottie player
+  const currentPlayer = lottiePlayers[value];
+  currentPlayer.element.style.display = "block";
+
+  // Set loop to true for the active player
+  currentPlayer.element.loop = true;
+
+  // Stop the current animation and go to the first frame
+  currentPlayer.element.stop();
+
+  // Highlight the clicked button
+  const allButtons = document.querySelectorAll(".trade_shares_btns");
+  allButtons.forEach((btn) => btn.classList.remove("trade_shares_active_btns"));
+  document
+    .querySelector(`[data-title="${value}"] .trade_shares_btns`)
+    .classList.add("trade_shares_active_btns");
+
+  // Activate dots based on the clicked button
+  const allDots = document.querySelectorAll(".timeline_dot");
+  allDots.forEach((dot) => dot.classList.remove("active_timeline_dot"));
+  if (value === "company") {
+    document
+      .querySelector("[data-title='company'] .timeline_dot")
+      .classList.add("active_timeline_dot");
+    document
+      .querySelector(".trade_line_first")
+      .classList.add("tradeLinetransitionFirst");
+    document
+      .querySelector(".trade_line_second")
+      .classList.remove("tradeLinetransitionFirst");
+    document
+      .querySelector(".trade_line_second")
+      .classList.remove("tradeLineSecondAfter");
+    document
+      .querySelector(".trade_timeline")
+      .classList.remove("trade_timeline_gradient");
+  } else if (value === "invest") {
+    document
+      .querySelector("[data-title='company'] .timeline_dot")
+      .classList.add("active_timeline_dot");
+    document
+      .querySelector("[data-title='invest'] .timeline_dot")
+      .classList.add("active_timeline_dot");
+    document
+      .querySelector(".trade_line_first")
+      .classList.add("tradeLineSecondAfter");
+    document
+      .querySelector(".trade_line_second")
+      .classList.add("tradeLinetransitionFirst");
+    document
+      .querySelector(".trade_line_first")
+      .classList.remove("tradeLinetransitionFirst");
+    document
+      .querySelector(".trade_timeline")
+      .classList.remove("trade_timeline_gradient");
+  } else if (value === "shares") {
+    allDots.forEach((dot) => dot.classList.add("active_timeline_dot"));
+    document
+      .querySelector(".trade_timeline")
+      .classList.add("trade_timeline_gradient");
+    document
+      .querySelector(".trade_line_first")
+      .classList.remove("tradeLinetransitionFirst");
+    document
+      .querySelector(".trade_line_first")
+      .classList.remove("tradeLineSecondAfter");
+    document
+      .querySelector(".trade_line_second")
+      .classList.remove("tradeLinetransitionFirst");
+  } else {
+    document
+      .querySelector(`[data-title="${value}"] .timeline_dot`)
+      .classList.add("active_timeline_dot");
+    document
+      .querySelector(".trade_line_first")
+      .classList.remove("tradeLineSecondAfter");
+  }
+
+  // Play the animation
+  currentPlayer.element.play();
+};
+
+// Event listener for automatic button switching
+const startAutomaticButtonSwitching = () => {
+  // Start the timer initially
+  timer = setTimeout(resetTimerAndSwitchButton, 7000);
+};
+
+// Start automatic button switching
+startAutomaticButtonSwitching();
+
 </script>
   </body>
 </html>
