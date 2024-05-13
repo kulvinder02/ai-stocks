@@ -19,6 +19,7 @@
 }
 
 :root {
+    --font-sm-xm: 14px;
     --font-xxsm: 12px;
     --font-xsm: 14.74px;
     --font-sm: 16px;
@@ -31,6 +32,13 @@
     --font-2xl: 48px;
     --font-3xl: 52px;
     --font-4xl: 68px;
+    --color-alto:#D9D9D9;
+    --color-kangaroo:#CBCEC3;
+    --color-rangitoto:#343927;
+    --color-Siam:#595F4D;
+    --color-white:#ffffff;
+    --color-dark-blue: #0f1307;
+    --color-black: #000000;
     --color-extralight-black: #4d4d4d;
     --color-light-black: #18161A;
     --color-grey: #151515;
@@ -41,10 +49,18 @@
     --color-dark-white: #cfd0cd;
     --color-green: #98BD42;
     --color-dark-green: #2DB965;
+    --color-black-dark-green: #228B22;
     --color-extradark-green: #495C21;
     --color-medium-white: #D0D0D0;
-    --color-pink: #D221EB;
-    
+    --color-pink: #D221EB;  
+    --color-dark-yellow:#1D1f17;
+    --color-black-green:#173717;
+    --color-black-light-green:#173717;
+    --color-white-grey:#808080;
+    --color-white-green-grey:#DAE7BB;
+    --color-white-green:#99A380;
+    --color-yellow-green:#1f2318;
+    --color-highlight-green:#40501C ;
 }
 
 /* line height */
@@ -71,100 +87,129 @@
     line-height: 160% !important;
 }
 
-.color-light-grey {
-    color: var(--color-light-grey);
-}
-.gradient_color {
+.pink_color {
     color: var(--color-pink);
 }
-.color-dark-grey {
+.color_dark_grey {
     color: var(--color-dark-grey);
 }
 
-.color-light-black {
-    color: var(--color-light-black);
-}
-
-.color-extralight-black {
+.color_extralight_black {
     color: var(--color-extralight-black);
 }
+.color_dark_yellow{
+    color: var(--color-dark-yellow);
+}
 
-.color-white {
+.color_rangitoto {
+    color: var(--color-rangitoto);
+}  
+.color_alto {
+    color: var(--color-alto);
+}    
+.color_white {
     color: var(--color-white);
 }
-.color-medium-white {
-    color: var(--color-medium-white);
+.color_kangaroo {
+    color: var( --color-kangaroo);
 }
-.color-light-white {
+
+.color_Siam {
+    color: var( --color-Siam);
+}
+.color_light_white {
     color: var(--color-light-white);
 }
 
-.color-green {
+.color_green {
     color: var(--color-green);
+}
+.color_hightlight_green {
+    color: var( --color-highlight-green);
+}
+.color_blac_light_green {
+    color: var( --color-black-light-green);
+}
+.color_white_grey {
+    color: var( --color-white-grey);
+}
+.color_white_green {
+    color: var( --color-white-green);
+}
+.color_yellow_green {
+    color: var( --color-yellow-green);
+}
+.color_white_green_grey {
+    color: var( --color-white-green-grey);
 }
 .bg_green {
     background-color: var(--color-green);
 }
-.color-dark-green {
+.color_dark_green {
     color: var(--color-dark-green);
 }
-.color-extradark-green {
-    color: var(--color-extradark-green);
+.color_dark_green {
+    color: var(--color-dark-green);
+}
+.color_black_dark_green {
+    color: var(--color-black-dark-green);
 }
 
-.color-dark-white {
+.color_dark_white {
     color: var(--color-dark-white);
 }
+.color_dark_blue {
+    color: var(--color-dark-blue);
+}
 
-
-.bg-grey {
+.bg_grey {
     background-color: var(--color-grey) !important;
 }
 
 
 /* text size */
-.text-xxsm {
+.text_xxsm {
     font-size: var(--font-xxsm);
 }
-.text-xxxl {
+.text_xxxl {
     font-size: var(--font-xxxl) !important;
 }
 
-.text-xsm {
+.text_xsm {
     font-size: var(--font-xsm);
 }
 
-.text-sm {
+.text_sm {
     font-size: var(--font-sm);
 }
 
-.text-xl {
+.text_xl {
     font-size: var(--font-xl);
 }
-.text-xlg {
+.text_xlg {
     font-size: var(--font-xlg);
 }
-.text-xxl {
+.text_xxl {
     font-size: var(--font-xxl);
 }
 
-.text-3xl {
+.text_3xl {
     font-size: var(--font-3xl);
 }
 
-.text-4xl {
+.text_4xl {
     font-size: var(--font-4xl);
 }
 
-.text-2xl {
+.text_2xl {
     font-size: var(--font-2xl);
 }
 
-.text-md {
+.text_md {
     font-size: var(--font-md);
 }
 
-.text-lg {
+.text_lg {
     font-size: var(--font-lg);
 }
 
@@ -173,10 +218,10 @@
     font-weight: 500 !important;
 }
 
-.op_80{
+.opacity_80{
     opacity: 80% !important;
 }
-.op_70{
+.opacity_70{
     opacity: 70% !important;
 }
 @media (max-width:1279.98px) {
@@ -208,7 +253,7 @@
 
 @media (max-width:575.98px) {
     .text_sm_xsm{
-        font-size: 14px !important;
+        font-size: var( --font-sm-xm) !important;
     }
     .sm_lh_110{
         line-height: 110% !important;

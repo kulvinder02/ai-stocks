@@ -1,1494 +1,1514 @@
 * {
-    list-style: none;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    text-decoration: none !important;
-  }
-  
-  .custom_container {
-    max-width: 1164px !important;
-  }
-  
-  /* navbar */
-  .logo_name {
-    cursor: pointer;
-    width: 192px;
-    height: 22.65px;
-  }
-  
-  .custum_navbar {
-    border-bottom: 1px solid #808080;
-    height: 100px;
-  }
-  
-  .nav_btn {
-    transition: all 300ms ease-in-out;
-    padding: 11.2px 21.5px !important;
-    border: 1px solid white;
-  }
-  
-  .nav_btn:hover {
-    background-color: #98BD42 !important;
-    color: black;
-  }
-  
-  .menu_btn {
-    cursor: pointer;
-    margin-left: 10px;
-    border: 1px solid white !important;
-    padding: 18px 15px !important;
-    width: 52px;
-    height: 52px;
-    background-color: inherit;
-  }
-  
-  .menu_btn span {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: 300ms linear;
-  }
-  
-  /* --------------hero-section-------------- */
-  .hero_bg {
-    background-image: url("../images/webp/hero-bg.webp");
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-  }
-  .coutdown_digit_box{
-    width: 50px !important;
-  }
-  .mobile_frame {
-    background-image: url("../images/webp/mobile-frame.webp");
-    background-position: center;
-    background-size: cover;
-    max-width: 328.76px;
-    height: 644px;
-    padding: 63px 28px;
-  }
-  
-  .mobile_btn {
-    transition: all 300ms ease-in-out;
-    border: none !important;
-    padding: 13.3px 28.3px !important;
-    border-radius: 87px;
-    background: #98BD42;
-  }
-  
-  .mobile_btn:hover {
-    background: #000;
-    color: white;
-  }
-  
-  .video_box {
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    background: #000;
-    max-width: 762px;
-    border: 1px solid #3f4f1d;
-    padding: 20px !important;
-  }
-  
-  /*------------- vdiobox------------- */
-  #videoContainer {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-  
-  #myVideo {
-    width: 100%;
-    height: auto;
-  }
-  
-  #toggleButton {
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-  
-  .error {
-    color: red;
-  }
-  
-  .hero_video {
-    object-fit: cover !important;
-    max-width: 100% !important;
-    width: 921px !important;
-    height: 324px !important;
-  }
-  
-  
-  /* ------slider srction--------- */
-  .slide_container {
-    padding: 72px !important;
-    width: calc(331px * 8);
-    -webkit-animation: scroll 20s linear infinite;
-    animation: scroll 20s linear infinite;
-  }
-  
-  @-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-  
-    100% {
-        -webkit-transform: translateX(calc(-331px * 4));
-        transform: translateX(calc(-331px * 4));
-    }
-  }
-  
-  .blur_circle {
-    filter: blur(320px);
-    border-radius: 400px;
-    width: 458px;
-    height: 458px;
-    background-color: #98BD42;
-  }
-  
-  .slider_card {
-    border: 1px solid transparent;
-    transition: all 300ms ease-in-out;
-    width: 315px;
-    background: #151515;
-    padding: 14.5px 9.2px !important;
-  }
-  
-  .slider_card:hover {
-    border: 1px solid #98BD42;
-  }
-  
-  .slider_profile_img {
-    max-width: 88.52px;
-    height: 87.82px;
-  }
-  
-  
-  /*---------- benifits---------- */
-  .green_circle {
-    background: #98BD42;
-    height: 236.58px;
-    width: 236.58px;
-    border-radius: 150px;
-  }
-  
-  .benifits_box {
-    padding-bottom: 78px !important;
-    padding-top: 78px !important;
-  }
-  
-  .stocks_info {
-    max-width: 179px;
-  }
-  
-  .left_border_box {
-    overflow: hidden;
-    position: relative;
-    transition: all 200ms ease-in-out;
-    max-width: 833px;
-    background: #1D1f17;
-    border-left: 8px solid #98BD42;
-    padding: 26px 26px !important;
-  
-  }
-  
-  .left_border_box:hover .numerical_hilight_text {
-    transition: all 400ms ease-in-out;
-    color: #173717;
-  }
-  
-  .left_border_box::after {
-    transition: all 400ms ease-in-out;
-    position: absolute;
-    content: "";
-    top: 0%;
-    left: -110%;
-    background: #98BD42 !important;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .left_border_box:hover:after {
-    left: 0%;
-  }
-  
-  .left_border_content {
-    position: relative;
-    z-index: 1 !important;
-  }
-  
-  
-  .main_benifit_box {
-    padding-bottom: 72px !important;
-  }
-  
-  /* ---understaing--- */
-  .green_card {
-    max-width: 524px !important;
-    border-radius: 16px;
-    min-height: 260px;
-    background: #98BD42;
-  }
-  
-  .john_invested {
-    width: 72px;
-    height: 72px;
-  }
-  
-  .graph_card {
-    margin-top: -60px;
-    max-width: 471px;
-    border-radius: 15px;
-    background: white;
-    padding: 20px !important;
-  }
-  
-  .graph_btn {
-    transition: all 300ms ease-in-out;
-    border: 1px solid transparent !important;
-    padding: 13.5px 27.5px !important;
-    background: #98BD42;
-    margin-top: 50px;
-  }
-  
-  .graph_btn:hover {
-    background: white;
-    color: #98BD42;
-  }
-  
-  /* ----------how it work-------------- */
-  .how_it_work_bg {
-    background-image: url("../images/svg/half-circle-line.svg");
-    background-position: 50% 20%;
-    height: 910px;
-    background-repeat: no-repeat;
-  }
-  
-  /* ------------statstics for today--------------- */
-  
-  
-  .counter_box {
-    position: relative;
-    z-index: 10;
-    padding: 33px !important;
-    background: white;
-    width: 360px;
-    height: 318px;
-  }
-  
-  .counter_digit_box {
-    max-width: 199px;
-    height: 173px;
-    background-color: #DAE7BB;
-    border: 1px solid #99A380;
-  }
-  
-  .register_btn {
-    padding: 13.5px 20.5px !important;
-    width: 149px !important;
-    margin-top: 30px !important;
-  }
-  
-  .company_names {
-    transition: all 300ms ease-in-out;
-    cursor: pointer;
-    max-width: 145px;
-    height: 134px;
-    margin-bottom: 18px !important;
-  }
-  
-  .company_names:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  .steps_para_w,
-  .fotter_para_w {
-    max-width: 270px;
-  }
-  
-  .border_btn {
-    transition: all 300ms ease-in-out;
-    background: transparent !important;
-    border: 1px solid white;
-    padding: 13.5px 21.5px !important;
-  }
-  
-  .border_btn:hover {
-    color: white;
-    background-color: #98BD42 !important;
-  }
-  
-  .work_steps_card {
-    margin-top: 260px !important;
-    padding-bottom: 128px !important;
-  }
-  
-  
-  .statistics_px {
-    padding-left: 36px !important;
-    padding-right: 36px !important;
-  }
-  
-  .form_mt {
-    margin-top: 18px;
-  }
-  
-  input {
-    transition: all 200ms ease-in-out;
-    outline: none !important;
-    color: white !important;
-  }
-  
-  .input_border {
-    border: 1px solid #CCCCCC;
-    border-radius: 100px;
-    padding: 8px !important;
-    height: 37px;
-  }
-  
-  input:hover {
-    border: 1px solid #98BD42 !important;
-    transition: all 300ms ease-in-out;
-    outline: none !important;
-  }
-  
-  .form_btn {
-    transition: all 200ms ease-in-out;
-    border: 1px solid transparent;
-    background: #98BD42;
-    border-radius: 87px;
-    width: 269px;
-    padding: 12.4px 95px !important;
-  }
-  
-  .form_btn:hover {
-    background: #000;
-    color: white;
-  }
-  
-  
-  /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
-  .countdown_box {
-    width: 601px;
-  }
-  
-  /* -----------faq----------- */
-  .accordian_box {
-    max-width: 870px;
-  }
-  
-  .accordion {
-    border: unset !important;
-  }
-  
-  .accordion-button:not(.collapsed) {
-    border-bottom: transparent !important;
-    color: var(--bs-accordion-active-color);
-    background-color: transparent !important;
-    box-shadow: unset !important;
-    padding: 31px 0px 11px 0px !important;
-  
-  }
-  
-  .accordion-flush .accordion-item {
-    border-bottom: 1px solid #40501C !important;
-  }
-  
-  .accordion-button:not(.collapsed)::after {
-    transition: all 500ms linear !important;
-    transform: rotate(180deg) !important;
-  }
-  
-  .accordion-item {
-    background-color: transparent !important;
-  }
-  
-  .accordion-button::after {
-    background-size: cover !important;
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 32px !important;
-    margin-top: -4px !important;
-    background-image: url("../images/svg/accordian-btn.svg") !important;
-  }
-  
-  .accordion-button {
-    transition: all 600ms ease-in-out !important;
-    border-bottom: 1px solid #40501C !important;
-    padding: 24px 0px 24px 0px !important;
-  }
-  
-  .accordion-body {
-    position: relative;
-    z-index: 10;
-    border-bottom: 1px solid #98BD42 !important;
-    padding: 4px 0px 24px 0px !important;
-  }
-  
-  .accordian_heading {
-    max-width: 725px;
-  }
-  
-  .accordion-button,
-  .accordion-body,
-  accordion-item {
-    box-shadow: none !important;
-    outline: none !important;
-    background-color: transparent !important;
-  }
-  
-  .graph_box {
-    padding: 8px !important;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-  }
-  
-  /* ---------take first step----------- */
-  .form_box {
-    max-width: 514px;
-    border: 1px solid #495C21;
-  }
-  
-  .step_form_heading {
-    background: #181e0b;
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-  
-  .form_padding {
-    padding: 25px 20px !important;
-  }
-  
-  .form2_input {
-    border: 1px solid transparent !important;
-    background-color: #1f2318 !important;
-  }
-  
-  ::placeholder,
-  .number_text {
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    color: #cbcec3 !important;
-  }
-  
-  .number_text {
-    border-right: 1px solid #595f4d;
-    font-weight: 400 !important;
-    padding: 16px 13px !important;
-    background: #343927;
-  }
-  
-  .sign_up_btn {
-    transition: all 300ms ease-in-out;
-    width: 100%;
-    border: none !important;
-    background: #98BD42;
-    padding: 14px !important;
-    margin-top: 42px;
-  }
-  
-  .popupForm {
-    display: none;
-    position: fixed;
-    top: 10%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    background-color: transparent !important;
-    padding: 64px !important;
-    z-index: 9999;
-  }
-  
-  .popop_width {
-    padding: 30px 60px !important;
-  }
-  
-  .submit_popop {
-    padding: 8px 16px !important;
-    left: 19%;
-    top: 6%;
-    position: absolute;
-    background: #000;
-  }
-  
-  .sign_up_btn:hover {
-    background: white;
-    color: #98BD42;
-  }
-  
-  .group_logos {
-    max-width: 518.16px;
-    height: 534px;
-  }
-  
-  
-  /* -------------footer--------------- */
-  .footr_icon_box {
-    margin-top: 10px;
-    gap: 12px;
-  }
-  
-  .social_icon {
-    transition: all 300ms ease-in-out;
-  }
-  
-  .social_icon:hover {
-    transform: translateY(-6px);
-  }
-  
-  .fotter_line {
-    padding-top: 27px !important;
-    padding-bottom: 27px !important;
-    border-top: 1px solid #173717;
-  }
-  
-  ul {
-    padding-left: 0px !important;
-  }
-  
-  /* -----------ellips blur------- */
-  .hero_ellips {
-    left: 30%;
-    height: 280px !important;
-    filter: blur(250px) !important;
-  }
-  
-  .fotter_ellips {
-    bottom: -13%;
-    right: -4%;
-  }
-  
-  .take_step_ellips {
-    top: -15%;
-    right: -14%;
-  }
-  
-  .take_step_ellips2 {
-    bottom: -12%;
-    left: -23%;
-  }
-  
-  .work_ellips {
-    bottom: -3%;
-    left: -30%;
-  }
-  
-  .benifits_ellips2 {
-    top: -38%;
-    right: -20%;
-  }
-  
-  .logos_ellips {
-    bottom: -12%;
-    left: -15%;
-  }
-  
-  .logos_ellip2 {
-    right: -15%;
-    top: -30%;
-  }
-  
-  .benifits_ellips {
-    bottom: -30%;
-    left: -32%;
-  }
-  
-  .top_ai_ellips {
-    right: -35%;
-    top: 40%;
-  }
-  
-  /* ------------------tabs ------------------*/
-  .top_7ai_bg {
-    background-image: url("../images/webp/top-7-ai-bg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .tab_content {
-    display: none;
-  }
-  
-  .d_none {
-    display: none;
-  }
-  
-  .d_block {
-    display: block !important;
-  }
-  
-  .tab_button {
-    margin-bottom: 19px !important;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-    border: 1px solid transparent;
-  
-    max-width: 429px !important;
-    padding: 24.5px 24px !important;
-    background: #151515;
-  }
-  
-  .tab_btn_box {
-    max-height: 559px;
-    overflow-y: scroll;
-  }
-  
-  #top_ai_tabs::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .tab_logos_pics {
-    width: 178px;
-    height: 129px;
-  }
-  
-  .read_more_btn {
-    transition: all 300ms ease-in-out;
-    padding: 13.5px 28.1px !important;
-  }
-  
-  .read_more_btn:hover {
-    background-color: white;
-    color: #98BD42;
-  }
-  
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    border: 1px solid #98BD42;
-    border-radius: 20px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #98BD42;
-    border-radius: 20px;
-  }
-  
-  
-  /* -----------modals---------------- */
-  .popuppopup_modals {
-    display: none !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-  }
-  
-  /* Popup content */
-  .popup_content {
-    background: #000 !important;
-    position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-    border-radius: 16px;
-    width: 100%;
-    z-index: 99999;
-  }
-  
-  .popup_close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .bg_popup {
-    padding: 84px 60px !important;
-    max-width: 1164px;
-  }
-  
-  .modals_logo {
-    width: 280px;
-    height: 205px;
-  }
-  
-  .modals_para {
-    max-width: 445px;
-  }
-  
-  .mw_230 {
-    max-width: 230px;
-  }
-  
-  .modals_form_box {
-    background: white;
-    border-radius: 15px;
-    padding: 30px !important;
-  }
-  
-  .modals_form {
-    border-radius: 6px;
-    height: 52px;
-    width: 100% !important;
-    border: 1px solid #d9d9d9;
-  }
-  
-  .modals_form_email {
-    border-radius: 6px;
-    padding: 10px !important;
-    height: 52px;
-    width: 100%;
-    border: 1px solid #d9d9d9;
-  }
-  
-  .modal_form_btn {
-    transition: all 300ms ease-in-out;
-    border-radius: 6px;
-    margin-top: 35px;
-    width: 100%;
-    padding: 11px !important;
-  }
-  
-  .modal_form_btn:hover {
-    background: #000;
-  }
-  
-  .slick-vertical .slick-current {
-    border: 1px solid #98BD42 !important;
-  }
-  
-  /* trade long and short */
-  .account_open {
-    transition: all 300ms ease-in-out;
-    margin-top: 15px !important;
-    padding: 16px 29px !important;
-    background: #98BD42;
-  }
-  .account_open:hover{
-    color: #98BD42;
-    background-color: #fff;
-  }
-  
-  /* TRADE LEVERAGE SECTION  */
-  .trade_leverage_parent {
-    max-width: 617px;
-  }
-  
-  
-  .timeline_dot {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #939393;
-    position: relative;
-    z-index: 2;
-    background-color: white;
-  }
-  
-  .timeline_dot::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* Adjust as needed */
-    left: 50%;
-    transform: translate(-50%);
-    /* Adjust as needed */
-    border-radius: 50%;
-    width: 20px;
-    /* Adjust as needed */
-    height: 20px;
-    /* Adjust as needed */
-    top: -20px;
-    transition: all 0.3s ease;
-  }
-  
-  .trade_shares {
-    gap: 25px;
-  }
-  
-  .trade_shares_btns {
-    padding: 17px 34px !important;
-    width: 519px;
-    height: 60px;
-    background: #0f1307;
-  }
-  
-  .trade_timeline {
-    max-width: 520px;
-  }
-  
-  .trade_timeline::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* Adjust as needed */
-    right: -99px;
-    transform: translateY(-50%);
-    /* Adjust as needed */
-    width: 1px;
-    /* Adjust as needed */
-    height: 60%;
-    transition: all 0.3s ease;
-    background: #939393;
-    z-index: 0;
-  }
-  
-  .trade_line_first::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* Adjust as needed */
-    right: 8px;
-    width: 1px;
-    /* Adjust as needed */
-    height: 0%;
-    transition: all 0.3s ease;
-    background: #228B22;
-    z-index: 1;
-  }
-  
-  .trade_line_second::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* Adjust as needed */
-    right: 8px;
-    width: 1px;
-    /* Adjust as needed */
-    height: 0%;
-    background: #228B22;
-    z-index: 1;
-  }
-  
-  .tradeLineSecondAfter::after {
-    height: 120% !important;
-  }
-  
-  .trade_timeline_gradient::after {
-    background: #228B22;
-  }
-  
-  .tradeLinetransitionFirst::after {
-    height: 120% !important;
-    transition: all 6s ease-in;
-  }
-  
-  .trade_shares_active_btns {
-    border: 1px solid #98BD42;
-  }
-  
-  .active_timeline_dot {
-    border-color: transparent;
-    border: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .active_timeline_dot::before {
-    background: #228B22;
-    top: 0;
-    z-index: -1;
-    /* Push the pseudo-element behind the content */
-  }
-  
-  .d_none {
-    display: none;
-  }
-  
-  .travel_phone_image {
-    max-width: 422px;
-  }
-  
-  .travel_section_padding {
-    padding-bottom: 140px;
-  }
-  .slider_after_line_dots{
-    gap: 90px !important;
-  }
-  
-  @media (max-width: 1199.9px) {
-    .trade_timeline::after {
-        right: 0%;
-    }
-    .trade_shares_btns {
-        width: 422px;
-    }
-  }
-  
-  
+  list-style: none;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  text-decoration: none !important;
+}
 
-  @media (min-width:1930px) {
-    .hero_bg {
-        min-height: 55vh !important;
-    }
+.custom_container {
+  max-width: 1164px !important;
+}
+
+/* navbar */
+.logo_name {
+  cursor: pointer;
+  width: 192px;
+  height: 22.65px;
+}
+
+.custum_navbar {
+  border-bottom: 1px solid var(--color-white-grey);
+  height: 100px;
+}
+
+.nav_btn {
+  transition: all 300ms ease-in-out;
+  padding: 11.2px 21.5px !important;
+  border: 1px solid var(--color-white);
+}
+
+.nav_btn:hover {
+  background-color: var(--color-green) !important;
+  color: var(--color-black);
+}
+
+.menu_btn {
+  cursor: pointer;
+  margin-left: 10px;
+  border: 1px solid var(--color-white) !important;
+  padding: 18px 15px !important;
+  width: 52px;
+  height: 52px;
+  background-color: inherit;
+}
+
+.menu_btn span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-white);
+  transition: 300ms linear;
+}
+
+/* --------------hero-section-------------- */
+.hero_bg {
+  background-image: url("../images/webp/hero-bg.webp");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.coutdown_digit_box {
+  width: 50px !important;
+}
+
+.mobile_frame {
+  background-image: url("../images/webp/mobile-frame.webp");
+  background-position: center;
+  background-size: cover;
+  max-width: 328.76px;
+  height: 644px;
+  padding: 63px 28px;
+}
+
+.mobile_btn {
+  transition: all 300ms ease-in-out;
+  border: none !important;
+  padding: 13.3px 28.3px !important;
+  border-radius: 87px;
+  background: var(--color-green);
+}
+
+.mobile_btn:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.video_box {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background: var(--color-black);
+  max-width: 762px;
+  border: 1px solid var(--color-black-light-green);
+  padding: 20px !important;
+}
+
+/*------------- hero stocks video box------------- */
+#videoContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#stocksvideo {
+  width: 100%;
+  height: auto;
+}
+
+#toggleButton {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.hero_video {
+  object-fit: cover !important;
+  max-width: 100% !important;
+  width: 921px !important;
+  height: 324px !important;
+}
+
+
+/* ------slider srction--------- */
+.slide_container {
+  padding: 72px !important;
+  width: calc(331px * 8);
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
-  
-  @media (min-width: 1526px) {
-    .slide_container {
-        width: calc(244px * 12);
-        -webkit-animation: scroll 15s linear infinite;
-        animation: scroll 15s linear infinite;
-    }
+
+  100% {
+    -webkit-transform: translateX(calc(-331px * 4));
+    transform: translateX(calc(-331px * 4));
   }
-  
-  @media (max-width:1199.9px) {
-    .slider_after_line_dots {
-        gap: 88px !important;
-    }
-    .group_logos {
-        height: 485px;
-    }
-  
-  
-    .mobile_frame {
-        height: 638px;
-        padding: 54px 28px;
-    }
-  
-    .graph_card {
-        max-width: 420px;
-    }
-  
-    .counter_box {
-        max-width: 360px;
-        padding: 23px;
-    }
-  
-    .statistics_px {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-  
-    .how_it_work_bg {
-        height: 845px;
-    }
-  
-  
+}
+
+.blur_circle {
+  filter: blur(320px);
+  border-radius: 400px;
+  width: 458px;
+  height: 458px;
+  background-color: var(--color-green);
+}
+
+.slider_card {
+  border: 1px solid transparent;
+  transition: all 300ms ease-in-out;
+  width: 315px;
+  background: var(--color-grey);
+  padding: 14.5px 9.2px !important;
+}
+
+.slider_card:hover {
+  border: 1px solid var(--color-green);
+}
+
+.slider_profile_img {
+  max-width: 88.52px;
+  height: 87.82px;
+}
+
+
+/*---------- benifits---------- */
+.green_circle {
+  background: var(--color-green);
+  height: 236.58px;
+  width: 236.58px;
+  border-radius: 150px;
+}
+
+.benifits_box {
+  padding-bottom: 78px !important;
+  padding-top: 78px !important;
+}
+
+.stocks_info {
+  max-width: 179px;
+}
+
+.left_border_box {
+  overflow: hidden;
+  position: relative;
+  transition: all 200ms ease-in-out;
+  max-width: 833px;
+  background: var(--color-dark-yellow);
+  border-left: 8px solid var(--color-green);
+  padding: 26px 26px !important;
+
+}
+
+.left_border_box:hover .numerical_hilight_text {
+  transition: all 400ms ease-in-out;
+  color: var(--color-black-green);
+}
+
+.left_border_box::after {
+  transition: all 400ms ease-in-out;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: -110%;
+  background: var(--color-green) !important;
+  width: 100%;
+  height: 100%;
+}
+
+.left_border_box:hover:after {
+  left: 0%;
+}
+
+.left_border_content {
+  position: relative;
+  z-index: 1 !important;
+}
+
+
+.main_benifit_box {
+  padding-bottom: 72px !important;
+}
+
+/* ---understaing--- */
+.green_card {
+  max-width: 524px !important;
+  border-radius: 16px;
+  min-height: 260px;
+  background: var(--color-green);
+}
+
+.john_invested {
+  width: 72px;
+  height: 72px;
+}
+
+.graph_card {
+  margin-top: -60px;
+  max-width: 471px;
+  border-radius: 15px;
+  background: var(--color-white);
+  padding: 20px !important;
+}
+
+.graph_btn {
+  transition: all 300ms ease-in-out;
+  border: 1px solid transparent !important;
+  padding: 13.5px 27.5px !important;
+  background: var(--color-green);
+  margin-top: 50px;
+}
+
+.graph_btn:hover {
+  background: var(--color-white);
+  color: var(--color-green);
+}
+
+/* ----------how it work-------------- */
+.how_it_work_bg {
+  background-image: url("../images/svg/half-circle-line.svg");
+  background-position: 50% 20%;
+  height: 910px;
+  background-repeat: no-repeat;
+}
+
+/* ------------statstics for today--------------- */
+
+
+.counter_box {
+  position: relative;
+  z-index: 10;
+  padding: 33px !important;
+  background: var(--color-white);
+  width: 360px;
+  height: 318px;
+}
+
+.counter_digit_box {
+  max-width: 199px;
+  height: 173px;
+  background-color: var(--color-white-green-grey);
+  border: 1px solid var(--color-white-green);
+}
+
+.register_btn {
+  padding: 13.5px 20.5px !important;
+  width: 149px !important;
+  margin-top: 30px !important;
+}
+
+.company_names {
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  max-width: 145px;
+  height: 134px;
+  margin-bottom: 18px !important;
+}
+
+.company_names:hover {
+  transform: scale(1.05);
+}
+
+
+.steps_para_w,
+.fotter_para_w {
+  max-width: 270px;
+}
+
+.border_btn {
+  transition: all 300ms ease-in-out;
+  background: transparent !important;
+  border: 1px solid var(--color-white);
+  padding: 13.5px 21.5px !important;
+}
+
+.border_btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-green) !important;
+}
+
+.work_steps_card {
+  margin-top: 260px !important;
+  padding-bottom: 128px !important;
+}
+
+
+.statistics_px {
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
+
+.form_mt {
+  margin-top: 18px;
+}
+
+input {
+  transition: all 200ms ease-in-out;
+  outline: none !important;
+  color: var(--color-white) !important;
+}
+
+.input_border {
+  border: 1px solid var(--color-light-white);
+  border-radius: 100px;
+  padding: 8px !important;
+  height: 37px;
+}
+
+input:hover {
+  border: 1px solid var(--color-green) !important;
+  transition: all 300ms ease-in-out;
+  outline: none !important;
+}
+
+.form_btn {
+  transition: all 200ms ease-in-out;
+  border: 1px solid transparent;
+  background: var(--color-green);
+  border-radius: 87px;
+  width: 269px;
+  padding: 12.4px 95px !important;
+}
+
+.form_btn:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.countdown_box {
+  width: 601px;
+}
+
+/* -----------faq----------- */
+.accordian_box {
+  max-width: 870px;
+}
+
+#homepageAccordion .accordion {
+  border: unset !important;
+}
+
+#homepageAccordion .accordion-button:not(.collapsed) {
+  border-bottom: transparent !important;
+  color: var(--bs-accordion-active-color);
+  background-color: transparent !important;
+  box-shadow: unset !important;
+  padding: 24px 0px 11px 0px !important;
+
+}
+
+#homepageAccordion .accordion-flush .accordion-item {
+  border-bottom: 1px solid var(--color-highlight-green) !important;
+}
+
+#homepageAccordion .accordion-button:not(.collapsed)::after {
+  transition: all 500ms linear !important;
+  transform: rotate(180deg) !important;
+}
+
+#homepageAccordion .accordion-item {
+  background-color: transparent !important;
+}
+
+#homepageAccordion .accordion-button::after {
+  background-size: cover !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 32px !important;
+  background-image: url("../images/svg/accordian-btn.svg") !important;
+}
+
+#homepageAccordion .accordion-button {
+  transition: all 600ms ease-in-out !important;
+  border-bottom: 1px solid var(--color-highlight-green) !important;
+  padding: 24px 0px 24px 0px !important;
+}
+
+#homepageAccordion .accordion-body {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid var(--color-green) !important;
+  padding: 4px 0px 24px 0px !important;
+}
+
+#homepageAccordion .accordian_heading {
+  max-width: 725px;
+}
+
+#homepageAccordion .accordion-button,
+#homepageAccordion .accordion-body,
+#homepageAccordion accordion-item {
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.graph_box {
+  padding: 8px !important;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+}
+
+/* ---------take first step----------- */
+.form_box {
+  max-width: 514px;
+  border: 1px solid var(--color-extradark-green);
+}
+
+.step_form_heading {
+  background: rgb(24, 30, 11);
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.form_padding {
+  padding: 25px 20px !important;
+}
+
+.first_step_form_input {
+  border: 1px solid transparent !important;
+  background-color: var(--color-yellow-green) !important;
+}
+
+::placeholder,
+.mobile_input_select_option {
+  font-size: var(--font-sm);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--color-kangaroo) !important;
+}
+
+.mobile_input_select_option {
+  border-right: 1px solid var(--color-Siam);
+  font-weight: 400 !important;
+  padding: 16px 13px !important;
+  background: var(--color-rangitoto);
+}
+
+.sign_up_btn {
+  transition: all 300ms ease-in-out;
+  width: 100%;
+  border: none !important;
+  background: var(--color-green);
+  padding: 14px !important;
+  margin-top: 42px;
+}
+
+.popupForm {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: transparent !important;
+  padding: 64px !important;
+  z-index: 9999;
+}
+
+.form_popup_padding {
+  padding: 30px 60px !important;
+}
+
+.submit_popop {
+  padding: 8px 16px !important;
+  left: 19%;
+  top: 6%;
+  position: absolute;
+  background: var(--color-black);
+}
+
+.sign_up_btn:hover {
+  background: var(--color-white);
+  color: var(--color-green);
+}
+
+.group_logos {
+  max-width: 518.16px;
+  height: 534px;
+}
+
+
+/* -------------footer--------------- */
+.footr_icon_box {
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.social_icon {
+  transition: all 300ms ease-in-out;
+}
+
+.social_icon:hover {
+  transform: translateY(-6px);
+}
+
+.fotter_line {
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+  border-top: 1px solid var(--color-black-green);
+}
+
+/* -----------ellips blur------- */
+.hero_ellips {
+  left: 30%;
+  height: 280px !important;
+  filter: blur(250px) !important;
+}
+
+.fotter_ellips {
+  bottom: -13%;
+  right: -4%;
+}
+
+.take_step_ellips {
+  top: -15%;
+  right: -14%;
+}
+
+.take_step_ellips2 {
+  bottom: -12%;
+  left: -23%;
+}
+
+.work_ellips {
+  bottom: -3%;
+  left: -30%;
+}
+
+.benifits_ellips2 {
+  top: -38%;
+  right: -20%;
+}
+
+.logos_ellips {
+  bottom: -12%;
+  left: -15%;
+}
+
+.logos_ellip2 {
+  right: -15%;
+  top: -30%;
+}
+
+.benifits_ellips {
+  bottom: -30%;
+  left: -32%;
+}
+
+.top_ai_ellips {
+  right: -35%;
+  top: 40%;
+}
+
+/* ------------------tabs ------------------*/
+.top_7ai_bg {
+  background-image: url("../images/webp/top-7-ai-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.d_none,
+.tab_content {
+  display: none;
+}
+
+.d_block {
+  display: block !important;
+}
+
+.tab_button {
+  margin-bottom: 19px !important;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 1px solid transparent;
+
+  max-width: 429px !important;
+  padding: 24.5px 24px !important;
+  background: var(--color-grey);
+}
+
+.tab_btn_box {
+  max-height: 559px;
+  overflow-y: scroll;
+}
+
+#top_ai_tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab_logos_pics {
+  width: 178px;
+  height: 129px;
+}
+
+.read_more_btn {
+  transition: all 300ms ease-in-out;
+  padding: 13.5px 28.1px !important;
+}
+
+.read_more_btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-green);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid var(--color-green);
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-green);
+  border-radius: 20px;
+}
+
+
+/* -----------modals---------------- */
+.popuppopup_modals {
+  display: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+/* Popup content */
+.popup_content {
+  background: var(--color-black) !important;
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  width: 100%;
+  z-index: 99999;
+}
+
+.popup_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.bg_popup {
+  padding: 84px 60px !important;
+  max-width: 1164px;
+}
+
+.modals_logo {
+  width: 280px;
+  height: 205px;
+}
+
+.modals_para {
+  max-width: 445px;
+}
+
+.mw_230 {
+  max-width: 230px;
+}
+
+.modals_form_box {
+  background: var(--color-white);
+  border-radius: 15px;
+  padding: 30px !important;
+}
+
+.modals_form {
+  border-radius: 6px;
+  height: 52px;
+  width: 100% !important;
+  border: 1px solid var(--color-alto);
+}
+
+.modals_form_email {
+  border-radius: 6px;
+  padding: 10px !important;
+  height: 52px;
+  width: 100%;
+  border: 1px solid var(--color-alto);
+}
+
+.modal_form_btn {
+  transition: all 300ms ease-in-out;
+  border-radius: 6px;
+  margin-top: 35px;
+  width: 100%;
+  padding: 11px !important;
+}
+
+.modal_form_btn:hover {
+  background: var(--color-black);
+}
+
+.slick-vertical .slick-current {
+  border: 1px solid var(--color-green) !important;
+}
+
+/* trade long and short */
+.account_open {
+  transition: all 300ms ease-in-out;
+  margin-top: 15px !important;
+  padding: 16px 29px !important;
+  background: var(--color-green);
+}
+
+.account_open:hover {
+  color: var(--color-green);
+  background-color: var(--color-white);
+}
+
+/* TRADE LEVERAGE SECTION  */
+.trade_leverage_parent {
+  max-width: 617px;
+}
+
+
+.timeline_dot {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-white-grey);
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-white);
+}
+
+.timeline_dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%);
+  /* Adjust as needed */
+  border-radius: 50%;
+  width: 20px;
+  /* Adjust as needed */
+  height: 20px;
+  /* Adjust as needed */
+  top: -20px;
+  transition: all 0.3s ease;
+}
+
+.trade_shares {
+  gap: 25px;
+}
+
+.trade_shares_btns {
+  cursor: pointer;
+  padding: 17px 34px !important;
+  width: 519px;
+  height: 60px;
+  background: var(--color-dark-blue);
+}
+
+.trade_timeline {
+  max-width: 520px;
+}
+
+.trade_timeline::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Adjust as needed */
+  right: -99px;
+  transform: translateY(-50%);
+  /* Adjust as needed */
+  width: 1px;
+  /* Adjust as needed */
+  height: 60%;
+  transition: all 0.3s ease;
+  background: var(--color-white-grey);
+  z-index: 0;
+}
+
+.trade_line_first::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Adjust as needed */
+  right: 8px;
+  width: 1px;
+  /* Adjust as needed */
+  height: 0%;
+  transition: all 0.3s ease;
+  background: var(--color-black-dark-green);
+  z-index: 1;
+}
+
+.trade_line_second::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Adjust as needed */
+  right: 8px;
+  width: 1px;
+  /* Adjust as needed */
+  height: 0%;
+  background: var(--color-black-dark-green);
+  z-index: 1;
+}
+
+.tradeLineSecondAfter::after {
+  height: 120% !important;
+}
+
+.trade_timeline_gradient::after {
+  background: var(--color-black-dark-green);
+}
+
+.tradeLinetransitionFirst::after {
+  height: 120% !important;
+  transition: all 6s ease-in;
+}
+
+.trade_shares_active_btns {
+  border: 1px solid var(--color-green);
+}
+
+.active_timeline_dot {
+  border-color: transparent;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.active_timeline_dot::before {
+  background: var(--color-black-dark-green);
+  top: 0;
+  z-index: -1;
+  /* Push the pseudo-element behind the content */
+}
+
+.d_none {
+  display: none;
+}
+
+.travel_phone_image {
+  max-width: 422px;
+}
+
+.travel_section_padding {
+  padding-bottom: 140px;
+}
+
+.slider_after_line_dots {
+  gap: 90px !important;
+}
+
+@media (min-width:1930px) {
+  .hero_bg {
+    min-height: 55vh !important;
   }
-  
-  @media (max-width:991.9px) {
-    .coutdown_digit_box {
-      width: 90px !important;
+}
+
+@media (min-width: 1526px) {
+  .slide_container {
+    width: calc(244px * 12);
+    -webkit-animation: scroll 15s linear infinite;
+    animation: scroll 15s linear infinite;
   }
-    .trade_timeline {
-      max-width: 441px;
+}
+
+@media (max-width:1199.9px) {
+  .trade_timeline::after {
+    right: 0%;
   }
+
+  .trade_shares_btns {
+    width: 422px;
+  }
+
   .slider_after_line_dots {
     gap: 88px !important;
+  }
+
+  .group_logos {
+    height: 485px;
+  }
+
+
+  .mobile_frame {
+    height: 638px;
+    padding: 54px 28px;
+  }
+
+  .graph_card {
+    max-width: 420px;
+  }
+
+  .counter_box {
+    max-width: 360px;
+    padding: 23px;
+  }
+
+  .statistics_px {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .how_it_work_bg {
+    height: 845px;
+  }
+
+
 }
-    .start_trading_box {
-        max-width: none;
-        padding: 16px;
-    }
-  
-    .trade_shares {
-        row-gap: 15px;
-        column-gap: 12px;
-    }
-    .trade_shares_btns {
-        padding: 13px 6px !important;
-        width: 318px !important;
-        height: 55px;
-        border: 1px solid #0000001a;
-        box-shadow: 0px 0px 7.3px 2px #0000000d;
-    }
-  
-    .phone_bubble {
-        width: 90%;
-        height: 350px;
-    }
-  
-    .trade_timeline::after {
-        right: 24px;
-    }
-    .popup_content {
-        overflow-y: scroll !important;
-        height: 800px !important;
-    }
-  
-    .tab_button {
-        padding: 10.5px 24px !important;
-    }
-  
-    .tab_btn_box {
-        max-height: 140px;
-        overflow-y: scroll;
-    }
-  
-    .graph_btn {
-        margin-top: 27px;
-    }
-  
-    .accordion-body {
-        padding: 4px 0px 24px 8px !important;
-    }
-  
-    .register_btn {
-        margin-top: 10px !important;
-    }
-  
-    .mobile_frame {
-        height: 644px;
-    }
-  
-    .statistics_px {
-        padding-left: 14px !important;
-        padding-right: 14px !important;
-    }
-  
-    .work_steps_card {
-        margin-top: 60px !important;
-        padding-bottom: 90px !important;
-    }
-  
-    .how_it_work_bg {
-        height: 885px !important;
-        background-image: none;
-    }
-  
-    .company_names {
-        max-width: 125px;
-        height: 114px;
-        margin-bottom: 18px !important;
-    }
-  
-    .counter_box {
-        padding: 33px;
-    }
-  
-    .green_circle {
-        height: 146.58px;
-        width: 186.58px;
-    }
-  
-    .black_logo {
-        width: 150px;
-    }
+
+@media (max-width:991.9px) {
+  .group_logos {
+    width: 418px !important;
+    height: 434px !important;
   }
-  
-  @media (max-width:767.9px) { 
-    .trade_timeline::after {
-      right: 18px;
+
+  .coutdown_digit_box {
+    width: 90px !important;
   }
+
+  .trade_timeline {
+    max-width: 441px;
+  }
+
+  .slider_after_line_dots {
+    gap: 88px !important;
+  }
+
+  .start_trading_box {
+    max-width: none;
+    padding: 16px;
+  }
+
+  .trade_shares {
+    row-gap: 15px;
+    column-gap: 12px;
+  }
+
+  .trade_shares_btns {
+    padding: 13px 6px !important;
+    width: 318px !important;
+    height: 55px;
+  }
+
+  .phone_bubble {
+    width: 90%;
+    height: 350px;
+  }
+
+  .trade_timeline::after {
+    right: 24px;
+  }
+
+  .popup_content {
+    overflow-y: scroll !important;
+    height: 800px !important;
+  }
+
+  .tab_button {
+    padding: 10.5px 24px !important;
+  }
+
+  .tab_btn_box {
+    max-height: 140px;
+    overflow-y: scroll;
+  }
+
+  .graph_btn {
+    margin-top: 27px;
+  }
+
+  .accordion-body {
+    padding: 4px 0px 24px 8px !important;
+  }
+
+  .register_btn {
+    margin-top: 10px !important;
+  }
+
+  .mobile_frame {
+    height: 644px;
+  }
+
+  .statistics_px {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .work_steps_card {
+    margin-top: 60px !important;
+    padding-bottom: 90px !important;
+  }
+
+  .how_it_work_bg {
+    height: 885px !important;
+    background-image: none;
+  }
+
+  .company_names {
+    max-width: 125px;
+    height: 114px;
+    margin-bottom: 18px !important;
+  }
+
+  .counter_box {
+    padding: 33px;
+  }
+
+  .green_circle {
+    height: 146.58px;
+    width: 186.58px;
+  }
+
+  .black_logo {
+    width: 150px;
+  }
+}
+
+@media (max-width:767.9px) {
+  .trade_timeline::after {
+    right: 18px;
+  }
+
   .slider_after_line_dots {
     gap: 13px !important;
-}
+  }
+
   .travel_phone_image {
     padding-top: 19px;
     padding-bottom: 11px;
-} 
-.coutdown_digit_box {
-  width: 90px !important;
+  }
+
+  .coutdown_digit_box {
+    width: 90px !important;
+  }
+
+  .trade_shares_btns {
+    width: 333px !important;
+  }
+
+  .account_open {
+    margin-top: 15px !important;
+    padding: 7px 14px !important;
+  }
+
+  .bg_popup {
+    padding: 66px 18px !important;
+    max-width: 1164px;
+  }
+
+  .modals_logo {
+    width: 191px;
+    height: 147px;
+  }
+
+  .slide_container {
+    padding: 56px !important;
+  }
+
+  .group_logos {
+    height: 493px;
+  }
+
+  .counter_box {
+    width: 299px;
+    height: 312px;
+  }
+
+  .countdown_box {
+    max-width: 100% !important;
+  }
+
+  .black_logo {
+    width: 113px;
+  }
+
+  .green_circle {
+    height: 115.58px;
+    width: 186.58px;
+  }
+
+  .counter_box {
+    padding: 20px !important;
+  }
+
+  .graph_btn {
+    margin-top: 23px;
+  }
+
+  .how_it_work_bg {
+    height: 795px !important;
+  }
+
+  .sm_ai_stcok_text {
+    font-size: 14px;
+  }
+
+  .ai_stock_svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-    .trade_shares_btns {
-        width: 333px !important;
-    }
-    .account_open {
-        margin-top: 15px !important;
-        padding: 7px 14px !important;
-    }
-    .bg_popup {
-        padding: 66px 18px !important;
-        max-width: 1164px;
-    }
-  
-    .modals_logo {
-        width: 191px;
-        height: 147px;
-    }
-  
-    .slide_container {
-        padding: 56px !important;
-    }
-  
-    .group_logos {
-        height: 493px;
-    }
-  
-    .counter_box {
-        width: 299px;
-        height: 312px;
-    }
-  
-    .countdown_box {
-        max-width: 100% !important;
-    }
-  
-    .black_logo {
-        width: 113px;
-    }
-  
-    .green_circle {
-        height: 115.58px;
-        width: 186.58px;
-    }
-  
-    .counter_box {
-        padding: 20px !important;
-    }
-  
-    .graph_btn {
-        margin-top: 23px;
-    }
-  
-    .how_it_work_bg {
-        height: 795px !important;
-    }
-  
-    .sm_ai_stcok_text {
-        font-size: 14px;
-    }
-  
-    .ai_stock_svg {
-        width: 40px;
-        height: 40px;
-    }
+@media (max-width:575.9px) {
+  .group_logos {
+    width: 370px !important;
+    height: 386px !important;
   }
-  
-  @media (max-width:575.9px) {
-    .rounded_15 {
-      border-radius: 12px;
+
+  .rounded_15 {
+    border-radius: 12px;
   }
 
   .rounded_14 {
-      border-radius: 12px;
+    border-radius: 12px;
   }
 
   .trade_shares_last_btn {
-      width: 100%;
-      max-width: 327px;
+    width: 100%;
+    max-width: 327px;
   }
 
   .trade_shares {
-      max-width: 351px;
-      margin: 0 auto;
+    max-width: 351px;
+    margin: 0 auto;
   }
 
   .trade_timeline::after {
-      right: 21px;
+    right: 21px;
   }
-    .slider_after_line_dots {
-        gap: 16px !important;
-    }
-    .trade_shares_btns {
-        width: 291px !important;
-    }
-    .modals_form {
-        height: 40px;
-    }
-  
-    .modals_form_email {
-        height: 40px;
-    }
-  
-    .modal_form_btn {
-        margin-top: 25px;
-    }
-  
-    .slide_container {
-        padding: 48px !important;
-    }
-  
-    .countdown_dots {
-        width: 30px;
-        height: 33px;
-    }
-  
-    .border_btn {
-        padding: 10.5px 10.5px !important;
-    }
-  
-    .green_card2 {
-        min-height: 219px !important;
-    }
-  
-    .read_more_btn {
-        padding: 8.5px 16.1px !important;
-    }
-  
-    .top_ai_ellips {
-        right: -113%;
-        top: 32%;
-    }
-  
-    .tab_logos_pics {
-        width: 135px;
-        height: 103px;
-    }
-  
-    .video_button {
-        margin-top: -40px;
-        width: 40px;
-        height: 40px;
-    }
-  
-    .sign_up_btn {
-        padding: 7px !important;
-        margin-top: 32px;
-    }
-  
-    .input_border {
-        height: 32px;
-    }
-  
-    .number_text {
-        padding: 9px 13px !important;
-    }
-  
-    .form_btn {
-        width: 207px;
-        padding: 10.4px 50px !important;
-    }
-  
-    .form_mt {
-        margin-top: 5px;
-    }
-  
-    .mobile_frame {
-        padding: 41px 28px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 498px;
-        max-width: 268.76px;
-    }
-  
-    .accordion-button::after {
-        width: 18px !important;
-        height: 17px !important;
-        font-size: 8px !important;
-    }
-  
-    .fotter_line {
-        padding-top: 17px !important;
-        padding-bottom: 17px !important;
-    }
-  
-    .group_logos {
-        height: 478px;
-    }
-  
-    .mt_moblie {
-        margin-top: 0px;
-    }
-  
-    .ai_stock_svg {
-        margin-left: 10px !important;
-        padding-right: 10px !important;
-    }
-  
-    .accordion-button {
-        padding: 14px 0px 14px 0px !important;
-    }
-  
-    .video_box {
-        margin-top: -40px;
-    }
-  
-    .main_benifit_box {
-        padding-bottom: 40px !important;
-    }
-  
-    .green_card {
-        min-height: 300px;
-    }
-  
-    .custum_navbar {
-        height: 70px;
-    }
-  
-    .how_it_work_bg {
-        height: 1000px !important;
-    }
-  
-    .work_steps_card {
-        margin-top: 30px !important;
-        padding-bottom: 128px !important;
-    }
-  
-    .register_btn {
-        margin-bottom: 12px !important;
-        margin-top: 13px !important;
-    }
-  
-    .counter_digit_box {
-        max-width: 157px;
-        height: 95px;
-  
-    }
-  
-    .counter_box {
-        height: 210px;
-        max-width: 282px;
-    }
-  
-    .company_names {
-        max-width: 95px;
-        height: 70px;
-        margin-bottom: 10px !important;
-    }
-  
-    .sm_text_size {
-        font-size: 12px !important;
-    }
-  
-  
-    .graph_card {
-        margin-top: -13px;
-        max-width: 330px !important;
-    }
-  
-    .benifits_box {
-        padding-bottom: 28px !important;
-        padding-top: 28px !important;
-    }
-  
-    .green_circle {
-        margin-top: -40px;
-        height: 120.58px;
-        width: 125.58px;
-    }
-  
-    .black_logo {
-        width: 120px;
-    }
-  
-    .sm_ai_stcok_text {
-        font-size: 12px;
-    }
-  
-    .logo_name {
-        width: 102px;
-        height: 22.65px;
-    }
-  
-    .nav_btn {
-        padding: 5.2px 11.5px !important;
-    }
-  
-    .menu_btn {
-        margin-left: 5px;
-        padding: 8px 6px !important;
-        width: 30px;
-        height: 31px;
-    }
-  
-    .left_border_box {
-        padding: 13px 10px !important;
-    }
+
+  .slider_after_line_dots {
+    gap: 16px !important;
   }
-  
-  @media (max-width:540px) {
-    .hero_video {
-        height: 170px !important;
-    }
-  
-    .how_it_work_bg {
-        height: 970px !important;
-    }
+
+  .trade_shares_btns {
+    width: 291px !important;
   }
-  @media (max-width: 450px) {
-    .hero_video {
-        height: 190px;
-        max-width: 327px;
-    }
-  
-    .hero_video2 {
-        height: 190px;
-        max-width: 327px;
-    }
+
+  .modals_form {
+    height: 40px;
   }
-  @media (max-width:380px) {
-    .how_it_work_bg {
-        height: 1000px !important;
-    }
-  
-    .group_logos {
-        height: 328px;
-    }
-  
-    .graph_card {
-        max-width: 292px !important;
-    }
-  
-    .graph_btn {
-        padding: 4.5px 10.5px !important;
-    }
-  
-    .company_names {
-        max-width: 85px;
-        height: 60px;
-  
-    }
+
+  .modals_form_email {
+    height: 40px;
   }
-  
-  @media (max-width: 375px) {
-    .trade_shares {
-        max-width: 294px;
-    }
-  
-    .trade_shares_btns {
-        width: 200px !important;
-        height: 60px;
-    }
-  
-    .trade_timeline::after {
-        right: 38px;
-    }
+
+  .modal_form_btn {
+    margin-top: 25px;
   }
-  
-  @media (max-width: 365px) {
-    .trade_shares_btns {
-        width: 100%;
-    }
+
+  .slide_container {
+    padding: 48px !important;
   }
-  
-  @media (max-width:350px) {
-    .trade_shares_btns {
-        width: 201px !important;
-    }
-    .counter_box {
-        height: 220px;
-    }
-  
-    .group_logos {
-        height: 283px;
-    }
-  
-    .mt_moblie {
-        margin-top: 0px;
-    }
-  
-    .video_box {
-        padding: 7px !important;
-    }
-  
-    .countdown_text {
-        font-size: 16px !important;
-    }
-  
-    .how_it_work_bg {
-        height: 1040px !important;
-    }
-  
-    .green_card {
-        min-height: 340px;
-    }
-  
-    .graph_card {
-        max-width: 262px !important;
-    }
+
+  .countdown_dots {
+    width: 30px;
+    height: 33px;
   }
+
+  .border_btn {
+    padding: 10.5px 10.5px !important;
+  }
+
+  .green_card2 {
+    min-height: 219px !important;
+  }
+
+  .read_more_btn {
+    padding: 8.5px 16.1px !important;
+  }
+
+  .top_ai_ellips {
+    right: -113%;
+    top: 32%;
+  }
+
+  .tab_logos_pics {
+    width: 135px;
+    height: 103px;
+  }
+
+  .video_button {
+    margin-top: -40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sign_up_btn {
+    padding: 7px !important;
+    margin-top: 32px;
+  }
+
+  .input_border {
+    height: 32px;
+  }
+
+  .mobile_input_select_option {
+    padding: 9px 13px !important;
+  }
+
+  .form_btn {
+    width: 207px;
+    padding: 10.4px 50px !important;
+  }
+
+  .form_mt {
+    margin-top: 5px;
+  }
+
+  .mobile_frame {
+    padding: 41px 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 498px;
+    max-width: 268.76px;
+  }
+
+  .accordion-button::after {
+    width: 18px !important;
+    height: 17px !important;
+    font-size: 8px !important;
+  }
+
+  .fotter_line {
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  .group_logos {
+    height: 478px;
+  }
+
+  .mt_moblie {
+    margin-top: 0px;
+  }
+
+  .ai_stock_svg {
+    margin-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .accordion-button {
+    padding: 14px 0px 14px 0px !important;
+  }
+
+  .video_box {
+    margin-top: -40px;
+  }
+
+  .main_benifit_box {
+    padding-bottom: 40px !important;
+  }
+
+  .green_card {
+    min-height: 300px;
+  }
+
+  .custum_navbar {
+    height: 70px;
+  }
+
+  .how_it_work_bg {
+    height: 1000px !important;
+  }
+
+  .work_steps_card {
+    margin-top: 30px !important;
+    padding-bottom: 128px !important;
+  }
+
+  .register_btn {
+    margin-bottom: 12px !important;
+    margin-top: 13px !important;
+  }
+
+  .counter_digit_box {
+    max-width: 157px;
+    height: 95px;
+
+  }
+
+  .counter_box {
+    height: 210px;
+    max-width: 282px;
+  }
+
+  .company_names {
+    max-width: 95px;
+    height: 70px;
+    margin-bottom: 10px !important;
+  }
+
+  .sm_text_size {
+    font-size: 12px !important;
+  }
+
+
+  .graph_card {
+    margin-top: -13px;
+    max-width: 330px !important;
+  }
+
+  .benifits_box {
+    padding-bottom: 28px !important;
+    padding-top: 28px !important;
+  }
+
+  .green_circle {
+    margin-top: -40px;
+    height: 120.58px;
+    width: 125.58px;
+  }
+
+  .black_logo {
+    width: 120px;
+  }
+
+  .sm_ai_stcok_text {
+    font-size: 12px;
+  }
+
+  .logo_name {
+    width: 102px;
+    height: 22.65px;
+  }
+
+  .nav_btn {
+    padding: 5.2px 11.5px !important;
+  }
+
+  .menu_btn {
+    margin-left: 5px;
+    padding: 8px 6px !important;
+    width: 30px;
+    height: 31px;
+  }
+
+  .left_border_box {
+    padding: 13px 10px !important;
+  }
+}
+
+@media (max-width:540px) {
+  .hero_video {
+    height: 170px !important;
+  }
+
+  .how_it_work_bg {
+    height: 970px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero_video {
+    height: 190px;
+    max-width: 327px;
+  }
+
+  .hero_video2 {
+    height: 190px;
+    max-width: 327px;
+  }
+}
+
+@media (max-width:380px) {
+  .group_logos {
+    width: 318px !important;
+    height: 334px !important;
+  }
+
+  .how_it_work_bg {
+    height: 1000px !important;
+  }
+
+  .group_logos {
+    height: 328px;
+  }
+
+  .graph_card {
+    max-width: 292px !important;
+  }
+
+  .graph_btn {
+    padding: 4.5px 10.5px !important;
+  }
+
+  .company_names {
+    max-width: 85px;
+    height: 60px;
+
+  }
+}
+
+@media (max-width: 375px) {
+  .trade_shares {
+    max-width: 294px;
+  }
+
+  .trade_shares_btns {
+    width: 200px !important;
+    height: 60px;
+  }
+
+  .trade_timeline::after {
+    right: 38px;
+  }
+}
+
+@media (max-width: 365px) {
+  .trade_shares_btns {
+    width: 100%;
+  }
+}
+
+@media (max-width:350px) {
+  .trade_shares_btns {
+    width: 201px !important;
+  }
+
+  .counter_box {
+    height: 220px;
+  }
+
+  .group_logos {
+    height: 283px;
+  }
+
+  .mt_moblie {
+    margin-top: 0px;
+  }
+
+  .video_box {
+    padding: 7px !important;
+  }
+
+  .countdown_text {
+    font-size: 16px !important;
+  }
+
+  .how_it_work_bg {
+    height: 1040px !important;
+  }
+
+  .green_card {
+    min-height: 340px;
+  }
+
+  .graph_card {
+    max-width: 262px !important;
+  }
+}
