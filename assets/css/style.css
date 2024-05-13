@@ -676,26 +676,18 @@ input::-webkit-inner-spin-button {
 
 
 /* -----------modals---------------- */
-.popuppopup_modals {
-  display: none !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
+
 
 /* Popup content */
 .popup_content {
   background: var(--color-black) !important;
-  position: absolute;
-  top: 50% !important;
+  /* position: absolute; */
+  /* top: 50% !important;
   left: 50% !important;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   border-radius: 16px;
   width: 100%;
-  z-index: 99999;
+  /* z-index: 99999; */
 }
 
 .popup_close {
