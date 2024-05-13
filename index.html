@@ -121,7 +121,7 @@
               <h4 class="fw-bold ff_opensans lh_140 sm_lh_120 text_sm color_dark_grey text-center mt_moblie px-2 mt-sm-4 px-xl-4">This Is The Right Time to Invest In AI Stocks</h4>
               <p class="text_xxsm fw-normal lh_160 sm_lh_130 ff_opensans mt-sm-2 text-center mb-sm-4 pe-2 color-light-grey">In a matter of minutes one of our AI mentors will contact you, No Experience Required!</p>
          
-              <form action="#" id="myForm" class="form_mt">
+              <form  action="#" id="myForm" class="form_mt">
                 <div class="d-flex flex-column">
                     <label for="firstName" class="fw-semibold text-xxs ff_opensans color_extralight_black">First Name</label>
                     <input required type="text" id="firstName" name="firstName" class="mt-1 input_border">
@@ -162,7 +162,7 @@
                   <video id="stocksvideo" autoplay="true" loop="true" controls="false" muted class="w-100 hero_video ">
                       <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                   </video>
-                  <button id="toggleButton" onclick="toggleVideo()" class="pause_btn border-0 d-flex justify-content-center align-items-center"><img src="./assets/images/svg/start-vector.svg" class="video_button" alt="pause"></button>
+                  <!-- <button id="toggleButton" onclick="toggleVideo()" class="pause_btn border-0 d-flex justify-content-center align-items-center"><img src="./assets/images/svg/start-vector.svg" class="video_button" alt="pause"></button> -->
               </div>
               </div>
            
@@ -899,7 +899,7 @@
         <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start">
           <div class="form_box bg-transparent">
             <h5 class="text-center ff_orbitron color_white  text_lg step_form_heading px-5 lh_140 px-sm-0">This is the Right Time to Invest in AI ETF</h5>
-            <form action="#" id="myOtherForm" class="form_padding">
+            <form action="#" id="FirstStepForm" class="form_padding">
               <input required type="text" id="otherFirstName" placeholder="First Name" class="w-100 p-2 p-sm-3 mb-3 first_step_form_input">
               <input required type="text" id="otherLastName" placeholder="Last Name" class="w-100 p-2 p-sm-3 mb-3 first_step_form_input">
               <input required type="email" id="otherEmail" placeholder="Email" class="w-100 p-2 p-sm-3 mb-3 first_step_form_input">
@@ -1221,7 +1221,7 @@
   }
 
   // Initialize the form
-  initializeForm('myOtherForm', 'otherPopupForm');
+  initializeForm('FirstStepForm', 'otherPopupForm');
 </script>
 
 <!-- ----tabs------ -->
