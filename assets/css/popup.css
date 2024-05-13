@@ -1,0 +1,14 @@
+.btn-close {
+    color: white;
+    z-index: 1;
+}
+
+.common_modal {
+    max-width: 1048px;
+    margin: 0 auto;
+}
+
+.btn-close {
+    width: 2em;
+    height: 2em;
+}
