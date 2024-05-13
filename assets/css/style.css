@@ -914,12 +914,12 @@ input::-webkit-inner-spin-button {
   gap: 90px !important;
 }
 .back_to_top {
+  z-index: 100 !important;
   transform: rotate(180deg) !important;
   display: none;
   position: fixed;
   bottom: 70px;
   right: 30px;
-  z-index: 6 !important;
   width: 50px !important;
   height: 50px !important;
   background-color: var(--color-green);
@@ -927,7 +927,25 @@ input::-webkit-inner-spin-button {
   border-radius: 50px;
   box-shadow: 0px 5px 16px var(--color-white);
 }
+/* -----modals--- */
+.modals_close_btn{
+  color: var(--color-white);
+  z-index: 1;
+}
 
+.common_modal {
+  max-width: 1048px;
+  margin: 0 auto;
+}
+
+.modals_close_btn {
+  width: 50px;
+  height: 50px;
+}
+#hompage_modal ::-webkit-scrollbar {
+  overflow-y: auto;
+  display: none;
+}
 @media (min-width:1930px) {
   .hero_bg {
     min-height: 55vh !important;
@@ -987,6 +1005,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width:991.9px) {
+  .modals_para {
+    max-width: 618px;
+}
   .group_logos {
     width: 418px !important;
     height: 434px !important;
@@ -1027,11 +1048,6 @@ input::-webkit-inner-spin-button {
 
   .trade_timeline::after {
     right: 24px;
-  }
-
-  .popup_content {
-    overflow-y: scroll !important;
-    height: 800px !important;
   }
 
   .tab_button {
@@ -1180,6 +1196,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width:575.9px) {
+  .modals_form_box {
+    padding: 23px !important;
+}
   .form_popup_padding {
     white-space: nowrap;
     padding: 16px 39px !important;
