@@ -60,6 +60,13 @@
   <body class="bg-black">
     <!-- ------- Header------- -->
     <div class="overflow-hidden">
+            <!-- ----------back to top---------- -->
+            <div
+            id="backToTopBtn"
+            class="back_to_top cursor_pointer justify-content-center align-items-center"
+          >
+            <img src="./assets/images/svg/accordian-btn.svg" alt="BackToTop" />
+          </div>
     <section>
       <!-- nav bar -->
       <nav class="custum_navbar d-flex align-items-center">
@@ -938,7 +945,7 @@
     <div class="custom_container container">
     <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
       <a href=""><p class="color_white opacity_80 text_sm fw-normal ff_opensans lh_160">Privacy Policy | Conditions</p></a>
-      <p class="color_white opacity_80 text_sm fw-normal ff_opensans lh_160">Report Abuse/ Spam | Copyright@2024</p>       
+      <p class="color_white opacity_80 text_sm fw-normal ff_opensans lh_160">Report Abuse/ Spam | Copyright@<span id="currentYear"></span></p>       
     </div>
   </div>
 </div>
@@ -995,9 +1002,11 @@
   function toggleVideo() {
     if (video.paused) {
         video.play();
+        toggleButton.style.display = "none";
         toggleButton.innerHTML = '<img src="./assets/images/svg/start-vector.svg" class="video_button" alt="pause"> ';
     } else {
         video.pause();
+          toggleButton.style.display = "block";
         toggleButton.innerHTML = '<img src="./assets/images/svg/pause-vector.svg" class="video_button" alt="pause">   ';
     }
 }
@@ -1446,6 +1455,34 @@ const startAutomaticButtonSwitching = () => {
 // Start automatic button switching
 startAutomaticButtonSwitching();
 
+</script>
+
+<!-- --year function -->
+<script>
+  document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
+</script>
+
+ <!-- ------back to top----- -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = "flex";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    });
+
+    backToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  });
 </script>
   </body>
 </html>
