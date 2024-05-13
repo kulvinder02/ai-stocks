@@ -342,7 +342,7 @@
 input {
   transition: all 200ms ease-in-out;
   outline: none !important;
-  color: var(--color-white) !important;
+  color: var(--color-green) !important;
 }
 
 .input_border {
@@ -927,6 +927,9 @@ input::-webkit-inner-spin-button {
   border-radius: 50px;
   box-shadow: 0px 5px 16px var(--color-white);
 }
+.back_to_top_img{
+  transform: scale(1.4);
+}
 /* -----modals--- */
 .modals_close_btn{
   color: var(--color-white);
@@ -946,6 +949,7 @@ input::-webkit-inner-spin-button {
   overflow-y: auto;
   display: none;
 }
+
 @media (min-width:1930px) {
   .hero_bg {
     min-height: 55vh !important;
