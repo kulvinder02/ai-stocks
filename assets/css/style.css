@@ -385,7 +385,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* -----------faq----------- */
-.accordian_box {
+.homepage_accordian_box {
   max-width: 870px;
 }
 
@@ -394,11 +394,12 @@ input::-webkit-inner-spin-button {
 }
 
 #homepageAccordion .accordion-button:not(.collapsed) {
-  border-bottom: transparent !important;
+  transition: all 400ms ease-in-out !important;
+  border-bottom: 1px solid transparent !important;
   color: var(--bs-accordion-active-color);
   background-color: transparent !important;
   box-shadow: unset !important;
-  padding: 24px 0px 11px 0px !important;
+  padding: 24px 0px 24px 0px !important;
 
 }
 
@@ -424,12 +425,15 @@ input::-webkit-inner-spin-button {
 }
 
 #homepageAccordion .accordion-button {
+  display: flex !important;
+  align-items:start !important;
   transition: all 600ms ease-in-out !important;
   border-bottom: 1px solid var(--color-highlight-green) !important;
   padding: 24px 0px 24px 0px !important;
 }
 
 #homepageAccordion .accordion-body {
+  transition: all 600ms ease-in-out !important;
   position: relative;
   z-index: 10;
   border-bottom: 1px solid var(--color-green) !important;
@@ -854,7 +858,7 @@ input::-webkit-inner-spin-button {
   /* Adjust as needed */
   height: 0%;
   transition: all 0.3s ease;
-  background: var(--color-black-dark-green);
+  background: var(--color-green);
   z-index: 1;
 }
 
@@ -867,7 +871,7 @@ input::-webkit-inner-spin-button {
   width: 1px;
   /* Adjust as needed */
   height: 0%;
-  background: var(--color-black-dark-green);
+  background: var(--color-green);
   z-index: 1;
 }
 
@@ -876,7 +880,7 @@ input::-webkit-inner-spin-button {
 }
 
 .trade_timeline_gradient::after {
-  background: var(--color-black-dark-green);
+  background: var(--color-green);
 }
 
 .tradeLinetransitionFirst::after {
@@ -896,7 +900,7 @@ input::-webkit-inner-spin-button {
 }
 
 .active_timeline_dot::before {
-  background: var(--color-black-dark-green);
+  background: var(--color-green);
   top: 0;
   z-index: -1;
   /* Push the pseudo-element behind the content */

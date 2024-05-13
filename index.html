@@ -167,7 +167,7 @@
              <div class="video_box mx-auto">
               <div class="w-100">
                 <div id="videoContainer" class="mb-sm-2">
-                  <video id="stocksvideo" autoplay="true" loop="true" controls="false"  class="w-100 hero_video ">
+                  <video id="stocksvideo" autoplay="true" loop="true" controls="false" muted class="w-100 hero_video ">
                       <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                   </video>
                   <button id="toggleButton" onclick="toggleVideo()" class="pause_btn border-0 d-flex justify-content-center align-items-center"><img src="./assets/images/svg/start-vector.svg" class="video_button" alt="pause"></button>
@@ -655,7 +655,7 @@
       class="ff_orbitron color_white lh_125 text-center fw-normal mt-4 mt-sm-2 mt-lg-5 lh_140 sm_lh_120 text_2xl pe-xxl-4">
       Frequently Asked 
       <span class="fw-bold color_green" >Questions</span >  </h2> 
-        <div id="homepageAccordion" class="mb-5 mt-sm-0 my-sm-4 my-lg-5 p-2 accordian_box mx-auto">
+        <div id="homepageAccordion" class="mb-5 mt-sm-0 my-sm-4 my-lg-5 p-2 homepage_accordian_box mx-auto">
           <div  class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -989,7 +989,7 @@
     </script>
   <!-- video function -->
 <script>
-  var video = document.getElementById("myVideo");
+  var video = document.getElementById("stocksvideo");
   var toggleButton = document.getElementById("toggleButton");
 
   function toggleVideo() {
