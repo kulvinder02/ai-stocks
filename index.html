@@ -114,7 +114,10 @@
 
         <p class="text_sm fw-normal lh_160 ff_opensans mt-2  mt-sm-3 color_white opacity_80  col-sm-10 col-lg-8 mx-auto text-center px-2 px-sm-3 px-md-5 mt-sm-4">Major AI Stocks such as Microsoft and Nvidia have surged over <span class="color_green fw-bold">80% </span> in the past year. This giants are expected to grow <span class="color_green fw-bold">130.66% </span>in 2024</p>
         </div>
-            <!-- Popup Form -->
+    <!-- Popup Form -->
+    <div id="popupForm" class="popupForm" style="display:none;">
+      <h2 class="submit_popop text_md color_green mobile_form_popup rounded-3 ff_orbitron text-center">Form Submitted</h2>
+      </div>
         <div class="row mt-2 mt-sm-3 mt-lg-5">
           <div class="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-lg-end justify-content-center  order-1 order-lg-0">   
             <div class="mobile_frame position-relative">
@@ -123,29 +126,29 @@
          
               <form  action="#" id="myForm" class="form_mt">
                 <div class="d-flex flex-column">
-                    <label for="firstName" class="fw-semibold text_xxsm ff_opensans color_extralight_black">First Name</label>
+                    <label for="firstName" class="fw-semibold text-xxs ff_opensans color_extralight_black">First Name</label>
                     <input required type="text" id="firstName" name="firstName" class="mt-1 input_border">
                     <span id="firstNameError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                    <label for="lastName" class="fw-semibold text_xxsm ff_opensans color_extralight_black">Last Name</label>
+                    <label for="lastName" class="fw-semibold text-xxs ff_opensans color_extralight_black">Last Name</label>
                     <input required type="text" id="lastName" name="lastName" class="mt-1 input_border">
                     <span id="lastNameError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                    <label for="email" class="fw-semibold text_xxsm ff_opensans color_extralight_black">Email</label>
+                    <label for="email" class="fw-semibold text-xxs ff_opensans color_extralight_black">Email</label>
                     <input required type="email" id="email" name="email" class="mt-1 input_border">
                     <span id="emailError" class="error"></span>
                 </div>
                 <div class="d-flex flex-column mt-2">
-                    <label for="phoneNumber" class="fw-semibold text_xxsm ff_opensans color_extralight_black">Phone Number</label>
+                    <label for="phoneNumber" class="fw-semibold text-xxs ff_opensans color_extralight_black">Phone Number</label>
                     <input required type="tel" id="phoneNumber" name="phoneNumber" class="mt-1 input_border">
                     <span id="phoneNumberError" class="error"></span>
                 </div>
                 <button type="submit" class="mt-sm-4 mt-3 fw-bold lh_150 text_xxsm ff_opensans form_btn mx-auto">Get Started</button>
             </form>
             
-
+        
              <div class="d-flex justify-content-center align-items-center">
               <p class="color-black text_xxsm  lh_140 fw-bold ff_opensans border-0 bg-transparent mt-2 mt-sm-3">3 Spots Left</p>
            
@@ -240,7 +243,7 @@
       </div>
    </div>
    <div class="slider_card d-flex align-items-center">
-    <img src="./assets/images/webp/murray.webp" alt="murray" class="slider_profile_img">
+    <img src="./assets/images/webp/brent.webp" alt="murray" class="slider_profile_img">
       <div class="ps-2">
         <h4 class="fw-bold text_md lh_140 ff_opensans color_white">
           Brent</h4>
@@ -1041,75 +1044,45 @@
 
 <!----- count down --- -->
 <script>
- function startCountdown(targetDate) {
-  // Function to update the countdown
-  const updateCountdown = () => {
-    // Get the current date and time
-    const currentDate = new Date().getTime();
-    // Calculate the remaining time
-    let remainingTime = targetDate - currentDate;
-    // If the remaining time is less than or equal to 0, reset the countdown for 1 hour
-    if (remainingTime <= 0) {
-      targetDate = new Date(currentDate + 3600000).getTime(); // 3600000 milliseconds = 1 hour
-      remainingTime = targetDate - currentDate;
-      // Store the new target date in local storage
-      localStorage.setItem("targetDate", targetDate);
-    }
-    // Calculate days, hours, minutes, and seconds
-    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
-    );
-    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-    // Update the HTML elements with the remaining time
-    document.getElementById("desktopDays").textContent = days
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("desktopHours").textContent = hours
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("desktopMinutes").textContent = minutes
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("desktopSeconds").textContent = seconds
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("mobileDays").textContent = days
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("mobileHours").textContent = hours
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("mobileMintus").textContent = minutes
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("mobileSeconds").textContent = seconds
-      .toString()
-      .padStart(2, "0");
-  };
-  // Update the countdown immediately
-  updateCountdown();
-  // Update the countdown every second
-  const timer = setInterval(updateCountdown, 1000);
-}
-// Example usage
-let targetDate = localStorage.getItem("targetDate");
-if (!targetDate) {
-  // If target date is not stored, set it to the next hour
-  targetDate = new Date();
-  targetDate.setHours(targetDate.getHours() + 1);
-  targetDate.setMinutes(0);
-  targetDate.setSeconds(0);
-  localStorage.setItem("targetDate", targetDate.getTime());
-} else {
-  // If target date is stored, parse it from string to number
-  targetDate = parseInt(targetDate);
-}
-startCountdown(targetDate);
-</script>
+  function startCountdown(targetDate) {
+    const updateCountdown = () => {
+      try {
+        const currentDate = new Date().getTime();
+        let remainingTime = targetDate - currentDate;
+        if (remainingTime <= 0) {
+          targetDate = new Date(currentDate + 3600000).getTime();
+          remainingTime = targetDate - currentDate;
+          localStorage.setItem("targetDate", targetDate);
+        }
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+        document.getElementById("desktopDays").textContent = days.toString().padStart(2, "0");
+        document.getElementById("desktopHours").textContent = hours.toString().padStart(2, "0");
+        document.getElementById("desktopMinutes").textContent = minutes.toString().padStart(2, "0");
+        document.getElementById("desktopSeconds").textContent = seconds.toString().padStart(2, "0");
+      } catch (error) {
+        console.error("An error occurred:", error);
+      }
+    };
+  
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+  }
+  
+  let targetDate = localStorage.getItem("targetDate");
+  if (!targetDate) {
+    targetDate = new Date();
+    targetDate.setHours(targetDate.getHours() + 1);
+    targetDate.setMinutes(0);
+    targetDate.setSeconds(0);
+    localStorage.setItem("targetDate", targetDate.getTime());
+  } else {
+    targetDate = parseInt(targetDate);
+  }
+  startCountdown(targetDate);
+  </script>
 
 <!----- count down2 --- -->
 <script>
@@ -1169,7 +1142,7 @@ startCountdown(targetDate);
         
           setTimeout(function() {
               popupForm.style.display = 'none';
-          }, 20000);
+          }, 2000);
       }
   });
 
@@ -1272,6 +1245,72 @@ startCountdown(targetDate);
   initializeForm('FirstStepForm', 'otherPopupForm');
 </script>
 
+<!---pop formn validation--->
+<script>
+  function validateForm() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var phoneNumber = document.getElementById("phoneNumber").value;
+
+      var firstNameError = document.getElementById("firstNameError");
+      var lastNameError = document.getElementById("lastNameError");
+      var emailError = document.getElementById("emailError");
+      var phoneNumberError = document.getElementById("phoneNumberError");
+
+      var isValid = true;
+
+      // Reset previous error messages
+      firstNameError.innerText = "";
+      lastNameError.innerText = "";
+      emailError.innerText = "";
+      phoneNumberError.innerText = "";
+
+      // Validate First Name
+      if (firstName === "") {
+          firstNameError.innerText = "Please enter your first name";
+          isValid = false;
+      }
+
+      // Validate Last Name
+      if (lastName === "") {
+          lastNameError.innerText = "Please enter your last name";
+          isValid = false;
+      }
+
+      // Validate Email
+      if (email === "") {
+          emailError.innerText = "Please enter your email";
+          isValid = false;
+      } else if (!isValidEmail(email)) {
+          emailError.innerText = "Please enter a valid email address";
+          isValid = false;
+      }
+
+      // Validate Phone Number
+      if (phoneNumber === "") {
+          phoneNumberError.innerText = "Please enter your phone number";
+          isValid = false;
+      } else if (!isValidPhoneNumber(phoneNumber)) {
+          phoneNumberError.innerText = "Please enter a valid phone number";
+          isValid = false;
+      }
+
+      return isValid;
+  }
+
+  // Function to validate email format
+  function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+
+  // Function to validate phone number format
+  function isValidPhoneNumber(phoneNumber) {
+      var phoneRegex = /^\d{10}$/;
+      return phoneRegex.test(phoneNumber);
+  }
+</script>
 <!-- ----tabs------ -->
 <script>
   function opentabs(Tabid) {
@@ -1594,11 +1633,11 @@ startAutomaticButtonSwitching();
       .map(
           (data, index) => `
 <div  class="modal fade" id="exampleModal${index}" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div id="hompage_modal" class="modal-dialog modal-dialog-centered modal-dialog-scrollable pe-2 pe-md-0 min-vw-100">
+  <div id="hompage_modal" class="modal-dialog modal-dialog-centered modal-dialog-scrollable pe-3 pe-md-0 min-vw-100">
       <div class="modal-content bg-transparent common_modal mx-md-3 mx-xl-auto">
           <!-- Move the close button outside of modal-content -->
         
-          <div  id="modals_scrol_bar" class="modal-body p-sm-3 p-sm-5 bg-black w-100 common_modal position-relative">
+          <div  id="modals_scrol_bar" class="modal-body p-sm-3 p-lg-5 bg-black w-100 common_modal position-relative">
                 <button type="button" class="modals_close_btn bg-transparent border-0 transition_03 position-absolute top-0 end-0" data-bs-dismiss="modal"
               aria-label="Close">
               <img class="w-100" src="./assets/images/svg/poppop-cross-btn.svg" alt="popup-cross-btn">
@@ -1633,43 +1672,31 @@ startAutomaticButtonSwitching();
                                   Stocks !
                               </h4>
 
-                              <form action="">
-                                  <div class="d-flex gap-2 mt-sm-4 pt-2">
-                                      <div class="d-flex col-6 flex-column">
-                                          <label for="firstName"
-                                              class="fw-normal text-xm ff_opensans color-black mb-2">First
-                                              Name</label>
-                                          <input required type="text" id="firstName" name="firstName"
-                                              class="modals_form">
-                                          <span id="firstNameError" class="error"></span>
-                                      </div>
-                                      <div class="d-flex col-6 flex-column">
-                                          <label for="firstName"
-                                              class="fw-normal text-xm ff_opensans color-black mb-2">Last
-                                              Name</label>
-                                          <input required type="text" id="firstName" name="firstName"
-                                              class="modals_form">
-                                          <span id="firstNameError" class="error"></span>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex flex-column mt-2">
-                                      <label for="email" class="fw-normal text-xm ff_opensans color-black mb-2">Email
-                                      </label>
-                                      <input required type="email" id="email" name="email" class="modals_form_email">
-                                      <span id="firstNameError" class="error"></span>
-                                  </div>
-                                  <div class="d-flex flex-column mt-2">
-                                      <label for="number" class="fw-normal text-xm ff_opensans color-black mb-2">Phone
-                                          Number
-                                      </label>
-                                      <input required type="number" id="number" name="number"
-                                          class="modals_form_email">
-                                      <span id="firstNameError" class="error"></span>
-                                  </div>
-                                  <button
-                                      class="border-0 bg_green ff_orbitron text_sm fw-bold lh_160 color_white modal_form_btn">Start
-                                      Trading With [Nvidia]</button>
-                              </form>
+                              <form id="myForm" action="#" onsubmit="return validateForm()">
+    <div class="d-flex gap-2 mt-sm-4 pt-2">
+        <div class="d-flex col-6 flex-column">
+            <label for="firstName" class="fw-normal text-xm ff_opensans color-black mb-2">First Name</label>
+            <input required type="text" id="firstName" name="firstName" class="modals_form">
+            <span id="firstNameError" class="error"></span>
+        </div>
+        <div class="d-flex col-6 flex-column">
+            <label for="lastName" class="fw-normal text-xm ff_opensans color-black mb-2">Last Name</label>
+            <input required type="text" id="lastName" name="lastName" class="modals_form">
+            <span id="lastNameError" class="error"></span>
+        </div>
+    </div>
+    <div class="d-flex flex-column mt-2">
+        <label for="email" class="fw-normal text-xm ff_opensans color-black mb-2">Email</label>
+        <input required type="email" id="email" name="email" class="modals_form_email">
+        <span id="emailError" class="error"></span>
+    </div>
+    <div class="d-flex flex-column mt-2">
+        <label for="phoneNumber" class="fw-normal text-xm ff_opensans color-black mb-2">Phone Number</label>
+        <input required type="tel" id="phoneNumber" name="phoneNumber" class="modals_form_email">
+        <span id="phoneNumberError" class="error"></span>
+    </div>
+    <button type="submit" class="border-0 bg_green ff_orbitron text_sm fw-bold lh_160 color_white modal_form_btn">Start Trading With [Nvidia]</button>
+</form>
                           </div>
                       </div>
 

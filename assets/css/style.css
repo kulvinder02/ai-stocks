@@ -131,7 +131,7 @@
 }
 .slide_container {
   padding: 72px !important;
-  width: calc(331px * 8);
+  width: calc(391px * 8);
   -webkit-animation: scroll 20s linear infinite;
   animation: scroll 20s linear infinite;
 }
@@ -143,8 +143,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(calc(-331px * 4));
-    transform: translateX(calc(-331px * 4));
+    -webkit-transform: translateX(calc(-331px * 5));
+    transform: translateX(calc(-331px * 3));
   }
 }
 
@@ -515,7 +515,9 @@ input::-webkit-inner-spin-button {
   padding: 64px !important;
   z-index: 9999;
 }
+.mobile_form_popup{
 
+}
 .form_popup_padding {
   border-bottom: 5px solid var(--color-green);
   white-space: nowrap;
@@ -523,11 +525,13 @@ input::-webkit-inner-spin-button {
 }
 
 .submit_popop {
-  padding: 8px 16px !important;
-  left: 19%;
+  border-bottom: 5px solid var(--color-green);
+  white-space: nowrap;
+  padding: 20px 60px !important;
+  left: -63% !important;
   top: 6%;
   position: absolute;
-  background: var(--color-black);
+  background: var(--color-white);
 }
 
 .sign_up_btn:hover {
@@ -959,7 +963,7 @@ input::-webkit-inner-spin-button {
   height: 50px !important;
   background-color: var(--color-green);
   border-radius: 50px;
-  box-shadow: 0px 5px 16px var(--color-white);
+  box-shadow: 0px 1px 7px var(--color-white);
   animation: bounce 1s infinite;
 }
 .back_to_top:hover{
@@ -1293,7 +1297,7 @@ input::-webkit-inner-spin-button {
     padding: 13px 19px !important;
 }
   .modals_form_box {
-    padding: 23px !important;
+    padding: 17px !important;
 }
   .form_popup_padding {
     white-space: nowrap;
