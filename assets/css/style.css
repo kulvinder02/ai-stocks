@@ -116,8 +116,8 @@
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-
 .hero_video {
+  border: 1px solid var(--color-hurricane) !important;
   object-fit: cover !important;
   max-width: 100% !important;
   width: 921px !important;
@@ -304,7 +304,7 @@
   cursor: pointer;
   max-width: 145px;
   height: 134px;
-  margin-bottom: 18px !important;
+  margin-bottom: 16px !important;
 }
 
 .company_names:hover {
@@ -350,6 +350,7 @@ input {
   color: var(--color-black) !important;
 }
 #FirstStepForm input {
+  height: 52px !important;
   color: var(--color-white) !important;
 }
 .input_border {
@@ -461,8 +462,9 @@ input::-webkit-inner-spin-button {
 
 .graph_box {
   padding: 8px !important;
-  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  border: 2px solid var(--color-black-dark-green);
   border-radius: 10px;
+  height: 60px;
 }
 
 /* ---------take first step----------- */
@@ -567,9 +569,11 @@ input::-webkit-inner-spin-button {
 
 /* -----------ellips blur------- */
 .hero_ellips {
-  left: 30%;
+  background: var(--color-green);
+  top: -15%;
+  left: 35%;
   height: 280px !important;
-  filter: blur(250px) !important;
+  filter: blur(210px) !important;
 }
 
 .fotter_ellips {
@@ -628,6 +632,15 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.tabs_layer{
+  top: -1%;
+  z-index: 1;
+}
+.tabs_layer2{
+  transform: rotate(180deg);
+  bottom: -1%;
+  z-index: 1;
+}
 
 .d_none,
 .tab_content {
@@ -681,7 +694,6 @@ input::-webkit-inner-spin-button {
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 1px solid var(--color-green);
   border-radius: 20px;
 }
 
@@ -933,10 +945,12 @@ input::-webkit-inner-spin-button {
 }
 
 .back_to_top {
+  transition: all 300ms ease-in-out;
   cursor: pointer;
   z-index: 100 !important;
   transform: rotate(180deg) !important;
-  display: block; /* Change display to block to initially show the button */
+  display:flex; 
+  justify-content: center;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -948,9 +962,8 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 5px 16px var(--color-white);
   animation: bounce 1s infinite;
 }
-
-.back_to_top_img{
-  transform: scale(1.4);
+.back_to_top:hover{
+  background: white;
 }
 /* -----modals--- */
 .modals_close_btn{
@@ -974,6 +987,7 @@ input::-webkit-inner-spin-button {
 /* ----dropdwon----- */
 
 .dropbtn {
+  height: 52px !important;
   cursor: pointer;
   border-right: 1px solid var(--color-Siam);
   font-weight: 400 !important;
@@ -1012,14 +1026,9 @@ input::-webkit-inner-spin-button {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 @media (min-width:1930px) {
   .hero_bg {
-    min-height: 55vh !important;
+    min-height: 35vh !important;
   }
   .linear_slider{
     overflow: hidden;
@@ -1272,6 +1281,13 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width:575.9px) {
+  .back_to_top {
+    width: 38px !important;
+    height: 38px !important;
+}
+  .trade_shares_btns {
+    padding: 13px 19px !important;
+}
   .modals_form_box {
     padding: 23px !important;
 }
@@ -1536,7 +1552,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width:540px) {
   .hero_video {
-    height: 170px !important;
+    height: 144px !important;
   }
 
   .how_it_work_bg {
@@ -1545,10 +1561,7 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 450px) {
-  .hero_video {
-    height: 190px;
-    max-width: 327px;
-  }
+ 
 
   .hero_video2 {
     height: 190px;
