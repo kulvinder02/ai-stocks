@@ -23,7 +23,7 @@
 
 :root {
     --font-sm-xm: 14px;
-    --font-xxsm: 12px;
+    --font-xxsm: 12px !important;
     --font-xsm: 14.74px;
     --font-sm: 16px;
     --font-md: 18.44px;
