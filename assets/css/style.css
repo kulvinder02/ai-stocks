@@ -17,6 +17,7 @@
 }
 
 .custum_navbar {
+  background-color: var(--color-seaweed);
   border-bottom: 1px solid var(--color-white-grey);
   height: 100px;
 }
@@ -51,6 +52,7 @@
 
 /* --------------hero-section-------------- */
 .hero_bg {
+  max-width: 1920px;
   background-image: url("../images/webp/hero-bg.webp");
   background-position: center;
   background-size: cover;
@@ -124,6 +126,9 @@
 
 
 /* ------slider srction--------- */
+.linear_slider{
+  max-width: 1920px;
+}
 .slide_container {
   padding: 72px !important;
   width: calc(331px * 8);
@@ -410,7 +415,7 @@ input::-webkit-inner-spin-button {
 }
 
 #homepageAccordion .accordion-button:not(.collapsed)::after {
-  transition: all 500ms linear !important;
+  transition: all 500ms ease-in-out !important;
   transform: rotate(180deg) !important;
 }
 
@@ -489,13 +494,6 @@ input::-webkit-inner-spin-button {
   color: var(--color-kangaroo) !important;
 }
 
-.mobile_input_select_option {
-  border-right: 1px solid var(--color-Siam);
-  font-weight: 400 !important;
-  padding: 16px 13px !important;
-  background: var(--color-rangitoto);
-}
-
 .sign_up_btn {
   transition: all 300ms ease-in-out;
   width: 100%;
@@ -560,6 +558,12 @@ input::-webkit-inner-spin-button {
   padding-bottom: 27px !important;
   border-top: 1px solid var(--color-black-green);
 }
+.fottr_links{
+  transition: all 300ms ease-in-out;
+}
+.fottr_links:hover{
+ color: var(--color-green);
+}
 
 /* -----------ellips blur------- */
 .hero_ellips {
@@ -569,8 +573,8 @@ input::-webkit-inner-spin-button {
 }
 
 .fotter_ellips {
-  bottom: -13%;
-  right: -4%;
+  bottom: -30%;
+  right: -20%;
 }
 
 .take_step_ellips {
@@ -619,6 +623,7 @@ input::-webkit-inner-spin-button {
 
 /* ------------------tabs ------------------*/
 .top_7ai_bg {
+  max-width: 1920px;
   background-image: url("../images/webp/top-7-ai-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -915,12 +920,25 @@ input::-webkit-inner-spin-button {
 .slider_after_line_dots {
   gap: 90px !important;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .back_to_top {
+  cursor: pointer;
   z-index: 100 !important;
   transform: rotate(180deg) !important;
-  display: none;
+  display: block; /* Change display to block to initially show the button */
   position: fixed;
-  bottom: 70px;
+  bottom: 30px;
   right: 30px;
   width: 50px !important;
   height: 50px !important;
@@ -928,7 +946,9 @@ input::-webkit-inner-spin-button {
   border: 1px solid var(--color-white);
   border-radius: 50px;
   box-shadow: 0px 5px 16px var(--color-white);
+  animation: bounce 1s infinite;
 }
+
 .back_to_top_img{
   transform: scale(1.4);
 }
@@ -951,14 +971,64 @@ input::-webkit-inner-spin-button {
   overflow-y: auto;
   display: none;
 }
+/* ----dropdwon----- */
+
+.dropbtn {
+  cursor: pointer;
+  border-right: 1px solid var(--color-Siam);
+  font-weight: 400 !important;
+  padding: 16px 13px !important;
+  background: var(--color-rangitoto);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  top:100%;
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  min-width: 65px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+  color: var(--color-black);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--color-white)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 @media (min-width:1930px) {
   .hero_bg {
     min-height: 55vh !important;
   }
+  .linear_slider{
+    overflow: hidden;
+    max-width: 1920px;
+  }
 }
 
 @media (min-width: 1526px) {
+  
   .slide_container {
     width: calc(244px * 12);
     -webkit-animation: scroll 15s linear infinite;
@@ -1558,7 +1628,7 @@ input::-webkit-inner-spin-button {
   }
 
   .countdown_text {
-    font-size: 16px !important;
+    font-size: var(--font-sm) !important;
   }
 
   .how_it_work_bg {
